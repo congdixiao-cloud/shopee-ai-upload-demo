@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 2053141873">
+<g id="AI Motion &#194;&#183; Icon Pulse" opacity="0" filter="url(#filter0_f_0_806)">
+<circle cx="22.5" cy="22.5" r="15.8906" stroke="white" stroke-width="1.96875"/>
+</g>
+<path id="Vector" d="M24.4414 34.3261L22.9852 39.0363C22.8456 39.4879 22.1544 39.4879 22.0148 39.0363L20.5586 34.3261C19.3004 30.2564 16.1232 26.9311 11.914 25.2785L5.93264 22.9302C5.52245 22.7691 5.52245 22.2309 5.93264 22.0698L11.914 19.7215C16.1232 18.0689 19.3004 14.7436 20.5586 10.6739L22.0148 5.96366C22.1544 5.51211 22.8456 5.51211 22.9852 5.96366L24.4414 10.6739C25.6996 14.7436 28.8768 18.0689 33.086 19.7215L39.0674 22.0698C39.4775 22.2309 39.4775 22.7691 39.0674 22.9302L33.086 25.2785C28.8768 26.9311 25.6996 30.2564 24.4414 34.3261Z" fill="white"/>
+<path id="Vector_2" d="M35.8801 11.737L35.3332 13.9243C35.2872 14.1086 35.0253 14.1086 34.9793 13.9243L34.4325 11.737C33.9423 9.77624 32.4113 8.24525 30.4505 7.75505L28.2632 7.20823C28.0789 7.16217 28.0789 6.90033 28.2632 6.85427L30.4505 6.30745C32.4113 5.81725 33.9423 4.28626 34.4325 2.32547L34.9793 0.138179C35.0253 -0.0460599 35.2872 -0.0460596 35.3332 0.138179L35.8801 2.32547C36.3702 4.28626 37.9012 5.81725 39.862 6.30745L42.0493 6.85427C42.2336 6.90033 42.2336 7.16217 42.0493 7.20823L39.862 7.75505C37.9012 8.24525 36.3702 9.77624 35.8801 11.737Z" fill="white"/>
+<g id="AI Motion &#194;&#183; Gemini Inner Shine">
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_806" x="inf" y="inf" width="-inf" height="-inf" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.46094" result="effect1_foregroundBlur_0_806"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en"><head><script>document.documentElement.classList.add("app-initializing")</script><style>.app-initializing .hero,.app-initializing main{visibility:hidden}</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Upload · Shopee Seller Center</title><style>@font-face{font-family:Roboto;src:url('asset-roboto-400.ttf');font-weight:400}@font-face{font-family:Roboto;src:url('asset-roboto-500.ttf');font-weight:500}@font-face{font-family:Roboto;src:url('asset-roboto-600.ttf');font-weight:600}@font-face{font-family:Roboto;src:url('asset-roboto-700.ttf');font-weight:700}
+*{box-sizing:border-box}body{margin:0;font-family:Roboto,Arial,sans-serif;color:#333;background:#f6f6f6}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,input:focus-visible{outline:2px solid #ee4d2d;outline-offset:3px}img{display:block}p,h1,h2{margin:0}.page{position:relative;min-height:max(872px,100vh);overflow:hidden}.background{position:absolute;inset:0;z-index:-1;pointer-events:none}.glow-one{position:absolute;width:2120px;height:2120px;left:calc(50% - 1313px);top:-1099px}.glow-two{position:absolute;width:1214px;height:1214px;left:calc(50% - 237px);top:-454px}header{height:56px;background:white;box-shadow:0 1px 2px #0000001f;display:flex;align-items:center;gap:16px;padding-left:16px}.logo{width:28px;height:28.14px}nav{display:flex;align-items:center;gap:8px;flex:1;color:#999;font-size:16px;line-height:18px}nav img{width:16px;height:16px}.current{color:#333}.tools{display:flex;margin-right:-8px;height:56px}.tools span{width:48px;display:grid;place-items:center}.tools img{width:16px;height:16px}.divider{width:1px;height:18px;background:#e5e5e5;margin-right:-8px}.account{display:flex;align-items:center;gap:8px;padding:6px 16px;font-size:12px}.avatar{width:32px;height:32px;object-fit:cover;border-radius:50%}.chevron{width:16px;height:16px;margin-left:-4px}.normal{position:absolute;right:24px;top:80px;display:flex;gap:4px;align-items:center;color:#999;font-size:16px}.normal img{width:16px;height:16px}.hero{margin:107px auto 0;text-align:center}.ai-title{height:37px;display:flex;gap:12px;align-items:center;justify-content:center}.spark{width:37px;height:37px}.ai-title h1{font-size:30px;font-weight:700;line-height:32px;background:linear-gradient(90deg,#ee4d2d,#fc8f09 60.096%,#ffa813);background-clip:text;color:transparent}.hero h2{font-size:26px;line-height:28px;font-weight:600;margin-top:12px}.hero p{font-size:14px;line-height:16px;color:#999;margin-top:4px}main{width:859px;margin:61px auto 90px;position:relative;left:.5px}.composer{border:2px solid #fff;border-radius:12px 12px 24px 12px;padding:16px;background:rgba(255,255,255,.75);box-shadow:0 4px 54px rgba(238,77,45,.04);transition:box-shadow .3s,border-color .3s}.composer:focus-within,.composer.dragging{box-shadow:0 4px 54px rgba(238,77,45,.08),0 0 0 1px rgba(255,160,56,.18)}.materials{display:flex;gap:12px;min-height:96px;overflow-x:auto;padding:0;align-items:center}.upload{flex:none;width:96px;height:96px;border:1px dashed #b7b7b7;background:#fff;border-radius:6px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:12px;padding:12px 8px;color:#999;font-size:10px;line-height:12px;transition:border-color .2s,background .2s}.upload img{width:40px;height:30px}.upload:hover{border-color:#ee4d2d;background:#fffaf8}.upload:hover img{animation:lift .7s ease-in-out}.prompt-area{position:relative;margin-top:12px;border-top:.5px solid rgba(238,172,45,.12);padding-top:12px;height:76.5px}textarea{width:100%;height:64px;border:0;outline:none;resize:none;background:transparent;color:#333;padding:0;font-size:14px;line-height:normal;display:block}.placeholder{position:absolute;top:12px;left:0;right:0;color:#999;font-size:14px;line-height:normal;pointer-events:none}.placeholder button{border:0;padding:0;background:none;color:inherit;font:inherit;text-decoration:underline dotted;text-underline-offset:2px;pointer-events:auto}.actions{display:flex;justify-content:flex-end;margin-top:12px}#create{height:40px;width:157px;display:flex;gap:10px;align-items:center;justify-content:center;border:0;border-radius:4px;padding:0 16px;font-size:16px;font-weight:500;line-height:18px;color:white;background:linear-gradient(126.433deg,#ee4d2d 52.432%,#ffb73c 105.75%);transition:opacity .22s,box-shadow .22s}#create img{width:12.64px;height:11.93px}#create:disabled{opacity:.5}#create:not(:disabled):hover{box-shadow:0 3px 12px #ee4d2d33}.recommendations{margin-top:32px}.recommendation-heading{display:flex;align-items:center;height:32px}.recommend-label{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;white-space:nowrap}.recommend-label em{font-style:normal;color:#ee4d2d}.bulb{width:14px;height:14px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(#ee4d2d,#ff7337)}.bulb img{width:10px;height:10px}.more{margin-left:16px;display:flex;gap:2px;font-size:12px;color:#999;align-items:center}.more img{width:11px;height:11px;transform:rotate(-90deg)}.search{margin-left:auto;width:312px;height:32px;display:flex;align-items:center;padding:7px 12px;gap:8px;border:1px solid #e5e5e5;border-radius:4px;background:#fff}.search input{border:0;outline:0;min-width:0;width:100%;font-size:14px;color:#333}.search input::placeholder{color:#b7b7b7}.search img{width:16px;height:16px}.products{display:flex;gap:12px;margin-top:16px}.product{flex:1;min-width:0;height:108px;border:1px solid white;border-radius:6px;background:linear-gradient(#fffaf9,white);padding:12px;display:flex;align-items:center;gap:4px}.product-body{display:flex;gap:6px;flex:1;min-width:0}.product-image{width:56px;height:56px;object-fit:cover;border-radius:3.111px}.product-copy{flex:1;min-width:0}.sku{font-size:12px;color:#999;line-height:14px;margin-bottom:2px}.product-title{font-size:14px;line-height:16px}.stats{font-size:12px;color:#999;white-space:nowrap;line-height:14px;margin-top:6px}.link{font-size:12px;font-weight:500;line-height:14px;color:white;border:1px solid #ee4d2d;background:#ee4d2d;border-radius:4px;width:47px;height:24px;padding:0;flex:none}.file{width:96px;height:96px;flex:none;position:relative;border:1px solid #e5e5e5;border-radius:6px;background:white;animation:appear .2s ease-out;display:grid;place-items:center;overflow:hidden}.file>img{width:100%;height:100%;object-fit:cover}.file-name{font-size:11px;overflow-wrap:anywhere;padding:10px;color:#666;text-align:center}.remove{position:absolute;right:3px;top:3px;border:0;border-radius:50%;width:20px;height:20px;background:#333b;color:#fff;padding:0}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#333;color:white;padding:12px 20px;border-radius:6px;font-size:13px;z-index:10}#example{position:absolute;top:38px;right:0;width:420px;background:#fff;border:1px solid #eee;border-radius:6px;box-shadow:0 4px 20px #0002;padding:16px;z-index:4;font-size:13px;line-height:19px}#example p{margin-top:10px}.sample{background:#faf8fb;padding:12px} [hidden]{display:none!important}@keyframes lift{50%{transform:translateY(-2px)}}@keyframes appear{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}@media(max-width:950px){main{width:calc(100% - 48px);left:0}.tools{display:none}.hero h2{font-size:24px}.hero p{padding:0 24px}.recommend-label{font-size:12px}.search{width:240px}.product{padding:10px}.product-image{width:44px;height:44px}.stats{font-size:10px}}@media(max-width:650px){header{gap:10px}.account{display:none}nav{font-size:13px}.hero{margin-top:100px}.hero h2{font-size:20px}.hero p{line-height:20px}main{margin-top:40px;width:calc(100% - 32px)}.search{display:none}.products{flex-direction:column}.product{flex:none}.product-title{max-width:200px}.product-copy{flex:none}.stats{font-size:12px}.placeholder{font-size:13px}#example{width:100%}}
+.page{isolation:isolate}
+
+/* Figma 2360:25153 — upload example hover popover */
+#example{top:32.5px;left:65px;right:auto;width:694px;padding:0;border:0;border-radius:4px;background:transparent;box-shadow:none;filter:drop-shadow(0 0 8px #0000001a) drop-shadow(0 8px 8px #0000000a);z-index:20;font-size:14px;line-height:16px;max-width:calc(100vw - 48px)}
+#example .example-arrow{display:block;width:132px;height:6px;margin-left:auto;transform:scaleY(-1)}
+#example .example-body{padding:16px;background:white;border-radius:4px}
+#example p{margin:0}
+.example-intro{font-size:14px;line-height:16px;color:#333}
+.example-cards{display:flex;gap:16px;margin-top:16px}
+.example-card{width:210px;flex:0 0 210px;padding:12px;border:1px solid rgba(238,172,45,.18);border-radius:6px;background:rgba(254,246,245,.45)}
+.example-card h3{margin:0 0 12px;font-size:14px;font-weight:500;line-height:16px}
+.example-images{display:flex;gap:8px;width:184px;overflow:hidden}
+.example-thumb{position:relative;display:block;width:56px;height:56px;border-radius:6px;overflow:hidden;flex:none}
+.example-thumb img{position:absolute;height:100%;max-width:none;top:0}
+#example .example-description{font-size:12px;line-height:14px;color:#666;margin-top:2px;width:184px;min-height:42px}
+#example .example-count{font-size:12px;line-height:14px;color:#999;margin-top:15px}
+@media(max-width:950px){#example{left:auto;right:0}.example-cards{overflow-x:auto}.example-body{overflow:hidden}}
+
+/* Uploaded reference: Figma 2348:16735. */
+.file{border:.5px solid #e5e5e5;border-radius:4px}.file>img{border-radius:4px}.remove{right:3px;top:3px;width:12px;height:12px;background:none;border-radius:0}.remove img{width:12px;height:12px}.remove::after{content:'';position:absolute;inset:-5px}
+#prompt-formatted{position:absolute;top:12px;left:0;width:100%;height:64px;overflow:hidden;white-space:pre-wrap;overflow-wrap:break-word;pointer-events:none;font-size:14px;font-weight:400;line-height:normal;color:#333}.prompt-slot{font-weight:400;color:#333}
+#prompt{color:transparent;caret-color:#333}#prompt::selection{background:#fdd9c6;color:transparent}
+#prompt-loading{position:absolute;top:12px;left:0;display:flex;align-items:center;gap:8px;font-size:13px;line-height:18px;color:#999}.analysis-dot{width:6px;height:6px;border-radius:50%;background:#ef9b6d;animation:analysis-breathe 1s ease-in-out infinite}.analyzing #prompt{visibility:hidden}.analyzing #upload{pointer-events:none}.analysis-ellipsis{display:inline-block;animation:analysis-breathe 1s ease-in-out infinite}
+@keyframes analysis-breathe{50%{opacity:.35}}@media(prefers-reduced-motion:reduce){.analysis-dot,.analysis-ellipsis{animation:none}}
+
+/* Figma generation states 1966:13940 / 1877:97063 */
+.is-generating>.hero,.is-generating>.normal,.is-generating>main{display:none}
+.generation{width:1150px;min-height:747px;margin:37px auto 32px;padding:24px;border:1px solid #fff;border-radius:12px;background:rgba(255,255,255,.75);box-shadow:0 4px 54px #ee4d2d0a;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;gap:32px;animation:appear .24s ease-out}
+.generation-content{width:100%;display:flex;flex-direction:column;gap:24px}.generation-status{display:flex;flex-direction:column;gap:12px}
+#thinking-toggle{display:flex;align-items:center;padding:0;border:0;background:none;align-self:flex-start;text-align:left;gap:4px;font-size:20px;line-height:22px;font-weight:500}
+#thinking-toggle>span{background:linear-gradient(90deg,#ee4d2d,#fc8f09 60.096%,#ffa813);background-clip:text;color:transparent}.generation-spark{width:21px;height:21px;margin-right:8px;animation:generation-breathe 2.4s ease-in-out infinite}.generation-chevron{width:18px;height:18px;transition:transform .2s}#thinking-toggle[aria-expanded=false] .generation-chevron{transform:rotate(-90deg)}
+#thinking{position:relative;padding-left:33px}#thinking:before{content:'';position:absolute;left:10px;top:0;bottom:0;width:1px;background:#eee}
+#thinking-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}#thinking-steps li{display:flex;align-items:center;gap:8px;font-size:14px;line-height:16px;color:#999;animation:appear .35s ease-out}#thinking-steps li img{width:8px;height:8px}#thinking-steps li span{background:linear-gradient(90deg,#999,#f0c6ad 59.722%,#999);background-clip:text;color:transparent}.active img{animation:generation-breathe 1.8s ease-in-out infinite}
+.skeleton{padding:0 24px 0 33px;display:flex;flex-direction:column;gap:20px;overflow:hidden;border-radius:6px}.skeleton>div{position:relative;isolation:isolate;width:317px;height:69px;border-radius:12px;overflow:hidden;background:linear-gradient(90deg,#f8f8f8,#fff 39.068%,#fafafa 62.489%,#f7f7f7)}.skeleton>div:first-child{width:620px;height:128px}.skeleton>div:after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent 15%,#ffffffb3 50%,transparent 85%);transform:translateX(-100%);animation:skeleton-sweep 2.8s ease-in-out infinite}.skeleton>div:nth-child(2):after{animation-delay:.14s}.skeleton>div:nth-child(3):after{animation-delay:.28s}
+.generation-controls{display:flex;justify-content:flex-end;min-height:40px}#pause-generation{width:40px;height:40px;border:0;padding:0;background:none;border-radius:50%}#pause-generation img{width:40px;height:40px}#pause-generation:hover{background:#f6f6f6}#paused-controls{display:flex;gap:12px}#paused-controls button{height:40px;padding:0 24px;font-size:16px;line-height:24px;font-weight:500;border:1px solid #e5e5e5;background:#fff;border-radius:4px;color:#333}#paused-controls #continue-generation{background:#ee4d2d;color:#fff;border-color:#ee4d2d}.paused *,.paused *:after{animation-play-state:paused!important}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes generation-breathe{50%{opacity:.5}}@keyframes skeleton-sweep{to{transform:translateX(100%)}}
+@media(max-width:1200px){.generation{width:calc(100% - 48px)}}@media(max-width:700px){.generation{width:calc(100% - 32px);padding:20px;min-height:calc(100vh - 125px)}#thinking-toggle{font-size:17px}.skeleton>div:first-child{width:100%}.skeleton>div{max-width:65%}.skeleton>div:first-child{max-width:100%}}
+
+.is-review #thinking{height:79px;overflow:hidden}.is-review #thinking-scroll{height:79px;overflow-y:auto;scrollbar-width:none}.is-review #thinking-scroll::-webkit-scrollbar{display:none}:is(#review-note,.completion-note){font-size:14px;line-height:16px;margin-top:6px;background:linear-gradient(90deg,#999,#f0c6ad 59.722%,#999);background-clip:text;color:transparent}.thinking-fade{position:absolute;top:0;left:0;width:100%;height:28px;pointer-events:none}.is-review .generation-spark{animation:none}.review-entering .skeleton{opacity:0;transform:translateY(3px);transition:opacity .22s ease,transform .22s ease}
+#review-details{width:100%;padding:0 24px 0 10px;display:flex;flex-direction:column;gap:16px;border-radius:6px}#review-summary{display:flex;flex-direction:column;gap:8px;animation:review-reveal .5s cubic-bezier(.2,.7,.2,1) both}#review-title{font-size:18px;font-weight:500;line-height:20px}#review-category{display:flex;gap:10px;align-items:center;font-size:14px;line-height:16px}#review-category img{width:9px;height:5.143px;transform:rotate(-90deg)}#review-gallery{display:flex;flex-wrap:wrap;gap:16px}.review-tile{position:relative;width:156px;height:156px;border:1px solid #e5e5e5;border-radius:4px;overflow:hidden;flex:none;animation:review-reveal .6s cubic-bezier(.2,.7,.2,1) var(--tile-delay) both}.review-image{display:block;width:100%;height:100%;padding:0;border:0;background:transparent;overflow:hidden;position:relative;cursor:zoom-in}.review-image>img{width:100%;height:100%;object-fit:cover}.review-image>.hero-crop{position:absolute;width:176.56%;height:101.69%;left:-38.28%;top:-.84%;max-width:none}.review-ai{position:absolute;left:-1px;top:-1px;width:24px;height:24px;display:grid;place-items:center;background:#ffffff80;border-radius:4px 0 8px 0;pointer-events:none}.review-ai span{font-size:14px;font-weight:500;line-height:16px;background:url('asset-review-imgAi.png') center/cover;background-clip:text;color:transparent}.video-duration{position:absolute;right:9px;bottom:9px;padding:6px 8px;border-radius:4px;background:#0008;color:#fff;font-size:14px;line-height:16px;font-weight:500;pointer-events:none}
+#review-fields{display:flex;flex-direction:column;gap:16px;width:544px;max-width:100%}#review-fields label{display:flex;gap:12px;align-items:center;font-size:14px;line-height:16px}#review-fields label>span{width:84px;flex:none;font-weight:500}#review-fields b{font-weight:400;color:#ee4d2d}#review-fields input{height:40px;min-width:0;width:448px;padding:7px 12px;border:1px solid #e5e5e5;border-radius:4px;background:white;color:#333;font-size:14px;line-height:16px}.image-edit-overlay{position:absolute;left:0;right:0;bottom:0;height:30px;background:#0008;display:flex;align-items:center;justify-content:space-between;padding:4px 16px;opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .16s,transform .16s,visibility .16s}.editing-review .review-tile:hover .image-edit-overlay,.editing-review .review-tile:focus-within .image-edit-overlay{opacity:1;visibility:visible;transform:none}.image-edit-overlay button{padding:0;width:16px;height:16px;background:none;border:0}.image-edit-overlay img{width:16px;height:16px}.image-edit-overlay button:first-child img{width:14px;height:14px}.image-edit-overlay i{height:12px;width:1px;background:#ffffff80}
+#review-controls{display:flex;gap:12px;animation:review-reveal .4s .15s both}#review-controls button{height:40px;padding:0 24px;border:1px solid #e5e5e5;border-radius:4px;background:#fff;color:#333;font-size:16px;font-weight:500;line-height:24px}#review-controls #confirm-listing{border:0;color:white;background:linear-gradient(198.4795deg,#eeac2d 15.679%,#ee4d2d 79.841%)}
+#image-viewer{padding:24px;border:0;border-radius:12px;background:white;max-width:90vw;max-height:90vh;overflow:visible;box-shadow:0 12px 60px #0004}#image-viewer::backdrop{background:#0009}#large-image{max-width:80vw;max-height:78vh;object-fit:contain}#close-viewer{position:absolute;right:8px;top:5px;border:0;border-radius:50%;background:#fff;color:#333;font-size:26px;width:32px;height:32px;z-index:1}#image-viewer[open]{animation:review-reveal .22s ease-out}#thinking-scroll:focus-visible{outline:1px solid #ee4d2d;outline-offset:-1px}
+@keyframes review-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.generation{position:relative;overflow-anchor:none}.remaining-mode{width:851px;margin-left:max(24px,calc((100% - 1150px)/2));margin-right:0;transition:width .62s cubic-bezier(.2,.8,.2,1)}.remaining-mode #review-details{padding:0 0 0 12px;gap:12px}.remaining-mode .review-tile{width:96px;height:96px;animation:review-reveal .6s cubic-bezier(.2,.7,.2,1) var(--tile-delay) both;transform-origin:top left}.remaining-mode .review-tile:nth-child(2) .review-image>img{position:absolute;width:178px;height:178px;left:-54px;top:-46px}.remaining-mode .review-tile:nth-child(3) .review-image>img,.remaining-mode .review-tile:nth-child(5) .review-image>img,.remaining-mode .review-tile:nth-child(7) .review-image>img{position:absolute;width:128px;height:128px;left:-16px;top:-16px}.remaining-mode .video-duration{right:5px;bottom:5px}.remaining-mode .skeleton{padding-left:10px;animation:review-reveal .5s .2s both}.remaining-mode .skeleton>div:first-child{width:543px}.remaining-mode .skeleton>div:nth-child(2){width:323px}.remaining-mode .skeleton>div:nth-child(3){display:none}.remaining-mode .generation-spark{animation:generation-breathe 2.4s infinite}.remaining-steps{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:4px}.remaining-steps li{display:flex;gap:8px;align-items:center;font-size:14px;line-height:16px;animation:appear .35s both}.remaining-steps img{width:8px;height:8px;flex:none}.remaining-steps span{background:linear-gradient(90deg,#999,#f0c6ad 59.722%,#999);background-clip:text;color:transparent}
+#listing-preview{position:absolute;left:calc(100% + 16px);top:-1px;width:295px;height:599px;border:1px solid #fff;border-radius:12px;background:#f5f5f5;overflow:hidden;animation:review-reveal .65s .12s both;color:#333}.pdp-hero{height:295px;position:relative;overflow:hidden}.pdp-hero img{position:absolute;width:177.03%;height:101.5%;left:-37.5%;top:-.75%}.pdp-status{position:absolute;top:12px;left:12px;right:12px;display:flex;gap:5px;align-items:center;font-size:13px;font-weight:600}.pdp-status>span:first-child{margin-right:auto}.pdp-status img{width:14px;height:10px}.pdp-battery{width:19px;height:10px;border:1px solid #777;border-radius:2px;background:#333;box-shadow:inset 0 0 0 1px #aaa}.pdp-nav{position:absolute;top:45px;left:10px;right:10px;display:flex;gap:17px;align-items:center}.pdp-nav img{width:28px;height:28px}.pdp-nav img:first-child{padding:3px;background:#0004;border-radius:50%}.pdp-nav span{flex:1}.pdp-count{position:absolute;right:10px;top:265px;background:#ffffffa6;border-radius:11px;padding:3px 6px;font-size:11px;line-height:13px}.pdp-info{padding:10.5px;background:white;font-size:12px;line-height:14px}.pdp-price{font-size:20px;line-height:23px;color:#ee4d2d;font-weight:500}.pdp-price small{font-size:12px;margin-right:2px}.pdp-info p{margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pdp-colors{display:flex;gap:7px;margin-top:7px}.pdp-colors img{width:42px;height:42px;border-radius:3px}.pdp-info i{display:inline-block;width:56px;height:15px;background:#f8f8f8;border-radius:4px;vertical-align:middle}.pdp-size{height:26px;background:#f8f8f8;border-radius:12px;margin-top:7px}.pdp-shipping{display:flex;align-items:center;gap:7px;margin-top:22px}.pdp-shipping img{width:14px;height:14px}.pdp-shipping i{width:145px}.pdp-shipping img:last-child{margin-left:auto;width:10px;height:10px}.pdp-footer{position:absolute;bottom:30px;height:44px;width:100%;display:flex;color:white;background:#26aa99}.pdp-footer>div{width:82px;font-size:9px;text-align:center;line-height:11px;padding:4px}.pdp-footer img{width:21px;height:21px;margin:auto}.pdp-footer>div:last-child{flex:1;background:#ee4d2d;font-size:12px;line-height:16px}.pdp-footer strong{font-size:14px}.pdp-home{position:absolute;bottom:0;height:30px;width:100%;background:white;display:flex;justify-content:center;align-items:flex-end;padding-bottom:7px}.pdp-home i{height:4px;width:118px;border-radius:100px;background:#000}.pdp-shade{position:absolute;inset:0;background:#0006}.pdp-loading{position:absolute;top:128px;left:42px;width:210px;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;color:white;font-size:16px;line-height:18px}.pdp-loading img{width:45px;height:45px;animation:generation-breathe 2.8s infinite}.pdp-shine{position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 30%,#ffffff1f 50%,transparent 70%);transform:translateX(-110%);animation:preview-shine 4.4s ease-in-out infinite}@keyframes preview-shine{65%,100%{transform:translateX(110%)}}
+@media(max-width:1250px){.remaining-mode{width:calc(100% - 359px);margin-left:24px}.remaining-mode #thinking-toggle{font-size:18px}.remaining-mode .skeleton>div{max-width:100%}}@media(max-width:850px){.remaining-mode{width:calc(100% - 32px);margin-left:16px;margin-bottom:650px}#listing-preview{left:0;top:calc(100% + 16px)}}
+
+.listing-complete{min-height:809px;margin-top:32px}.listing-complete #review-details{padding-left:33px;gap:16px}.listing-complete .generation-spark{animation:none}.listing-complete .pdp-shade,.listing-complete .pdp-shine,.listing-complete .pdp-loading,.listing-complete .pdp-size,.listing-complete .pdp-info>p:has(i),.listing-complete .pdp-shipping{display:none}.listing-complete #listing-preview{left:calc(100% + 24px)}#completed-info{width:100%;animation:review-reveal .5s ease both}.completed-fields{display:flex;flex-direction:column;gap:16px;padding-bottom:16px;border-bottom:.5px solid #e5e5e580}.completed-fields>div,.description-row{display:flex;gap:12px;font-size:14px;line-height:16px}.completed-fields b,.description-row b{width:88px;flex:none;font-weight:500}.completed-fields>div>span{min-width:0}.completed-price{color:#ee4d2d;font-weight:500}.attributes{display:flex;flex-wrap:wrap;gap:8px 20px}#completed-category{display:flex;align-items:center;gap:10px}#completed-category img{width:9px;height:5.143px;transform:rotate(-90deg)}.completed-marketing{padding:24px 0;border-bottom:.5px solid #e5e5e580}.completed-marketing h3,.completed-other h3{font-size:18px;line-height:20px;font-weight:500;margin:0}.marketing-cards{display:flex;gap:24px;margin-top:12px}.marketing-cards article{flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:12px;border:.5px solid #ffa628;border-radius:8px;background:#fef6f5}.marketing-cards article>div{flex:1;min-width:0}.marketing-cards h4{font-size:14px;line-height:16px;font-weight:500;margin:0 0 8px;color:#ee4d2d}.marketing-cards p{font-size:12px;line-height:14px;color:#999}.marketing-cards button{height:32px;padding:0 16px;border:1px solid #ee4d2d;background:white;color:#ee4d2d;border-radius:32px;font-size:14px;font-weight:500}.completed-other{padding-top:24px}.description-row{margin-top:16px}.description-row p{flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.description-row p.expanded{display:block}#view-all-details{border:0;background:none;color:#999;font-size:14px;line-height:16px;padding:0;display:flex;gap:6px;align-items:center;margin-top:16px}#view-all-details img{width:12px;height:12px;filter:grayscale(1);opacity:.6}#view-all-details[aria-expanded=true] img{transform:rotate(180deg)}#completed-controls{display:flex;gap:12px}#completed-controls button{height:40px;padding:0 24px;border:1px solid #e5e5e5;border-radius:4px;background:white;font-size:16px;font-weight:500;color:#333}#completed-controls button:last-child{border:0;color:white;background:linear-gradient(208.39deg,#eeac2d 15.679%,#ee4d2d 79.841%)}.pdp-complete-size{margin-top:10px}.pdp-complete-size:before{content:'Size: M';font-size:12px;line-height:14px;display:block;margin-bottom:7px}.pdp-complete-size>div{display:flex;gap:7px}.pdp-complete-size span{width:52px;height:25px;border-radius:3.5px;background:#f5f5f5;display:grid;place-items:center;font-size:10.4px}.pdp-complete-size .selected{border:1.3px solid #ee4d2d;color:#ee4d2d;background:white}.pdp-complete-size .unavailable{color:#0004}.pdp-complete-size p{font-size:10px;color:#777;line-height:12px;margin-top:7px}.listing-complete #listing-preview{animation:review-reveal .45s ease both}@media(max-width:850px){.listing-complete #listing-preview{left:0}.marketing-cards{flex-direction:column}}
+.pdp-footer>div:first-child,.pdp-footer>div:nth-child(2){background-image:url('asset-pdp-footer-actions.png');background-size:164px 44px;background-repeat:no-repeat;color:transparent}.pdp-footer>div:nth-child(2){background-position:-82px 0}.pdp-footer>div:first-child img,.pdp-footer>div:nth-child(2) img{visibility:hidden}
+/* Keep the reference's explicit two-line label and prevent flex icon compression. */
+#upload{padding:12px 4px;gap:12px;align-items:center;justify-content:flex-end}
+#upload>img{width:40px;height:30px;flex:0 0 30px}
+#upload>span{flex:none;white-space:nowrap;text-align:center;font-size:10px;font-weight:400;line-height:12px}
+
+/* Full listing editor: viewport-bounded card with an independent footer. */
+.page.is-full-edit{height:100dvh;min-height:100dvh;overflow:hidden}
+.generation.full-edit{height:calc(100dvh - 120px);min-height:0;margin-top:32px;margin-bottom:32px;gap:24px}
+.full-edit .generation-content{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;border-bottom:.5px solid #e5e5e5;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#ddd transparent}
+.full-edit .generation-content>*{flex-shrink:0}.full-edit #review-details{padding-bottom:24px}
+.full-editor{display:flex;flex-direction:column;gap:16px;padding-bottom:16px;border-bottom:.5px solid #e5e5e580}
+.edit-row{display:flex;gap:12px;font-size:14px;line-height:16px;align-items:flex-start}.edit-row>span{width:84px;flex:none;font-weight:500;min-height:40px;display:flex;align-items:center}.edit-row em{font-style:normal;color:#ee4d2d;margin-right:3px}
+.full-editor input{height:40px;width:448px;max-width:100%;min-width:0;border:1px solid #e5e5e5;border-radius:4px;background:white;padding:7px 12px;font:400 14px/16px Roboto,sans-serif;color:#333}.full-editor input:focus{outline:1px solid #ee4d2d;outline-offset:-1px}.edit-attributes{flex:1;min-width:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px;padding:12px;background:#fafafa;border-radius:4px}.edit-attributes label{display:flex;flex-direction:column;gap:8px;color:#666}.edit-attributes input{width:100%}
+.edit-shipping{flex:1;min-width:0;border:1px solid #e5e5e5;border-radius:4px;padding:16px}.shipping-row{display:flex;align-items:center;gap:16px;min-height:27px}.shipping-row+.shipping-row{border-top:1px solid #eee;margin-top:12px;padding-top:12px}.shipping-name{flex:1;min-width:0;display:flex;gap:8px;align-items:center;white-space:nowrap}.shipping-badge{font-size:12px;line-height:16px;color:#ee4d2d;background:#fff2ef;border:.5px solid #ffb6aa;padding:0 4px}.shipping-fee{display:flex;align-items:center;gap:4px;white-space:nowrap}.shipping-fee input{width:110px;height:27px;padding:0;border:0;background:transparent;text-align:right}.shipping-fee img{width:16px;height:16px}.shipping-switch{width:48px;height:24px;border:0;background:none;padding:0;flex:none}.shipping-switch img{width:48px;height:24px}.shipping-switch:disabled{cursor:default}
+#full-edit-controls{display:flex;gap:12px;flex:none}#full-edit-controls button{height:40px;border:1px solid #e5e5e5;border-radius:4px;padding:0 24px;background:white;color:#333;font-size:16px;font-weight:500}#full-edit-controls button:last-child{border:0;color:white;background:linear-gradient(208.39deg,#eeac2d 15.679%,#ee4d2d 79.841%)}
+.full-edit .marketing-cards article{border-color:#ffe3cb}.full-edit .marketing-cards h4{color:#333}.full-edit .image-edit-overlay{padding:4px 7px}.full-edit .review-tile:hover .image-edit-overlay,.full-edit .review-tile:focus-within .image-edit-overlay{opacity:1;visibility:visible;transform:none}
+@media(max-width:1250px){.shipping-name{white-space:normal;flex-wrap:wrap}.shipping-badge{font-size:10px}.edit-attributes{grid-template-columns:repeat(2,minmax(0,1fr))}.edit-row>input{flex:1}}
+.page.is-full-edit{overflow:clip}
+.full-editor .edit-row>input{flex:0 1 448px;width:448px}
+/* Inline AI editing — Figma 2053:25911 / 2053:26790. */
+.ai-field{position:relative;flex-wrap:wrap;align-items:flex-start;column-gap:12px;row-gap:8px}.ai-field>span,.ai-field>p{max-width:calc(100% - 100px)}
+.ai-edit-trigger{display:flex;align-items:center;gap:4px;padding:0;border:0;background:none;font:400 14px/16px Roboto,sans-serif;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .14s;flex:none;height:16px}.ai-edit-trigger i{display:block;position:relative;width:14px;height:14px}.ai-edit-trigger img{position:absolute;left:8.64%;top:12.19%;width:78.86%;height:78.87%}.ai-edit-trigger span{background:linear-gradient(220.5deg,#eeac2d 15.679%,#ee4d2d 79.841%);background-clip:text;color:transparent}.ai-field:hover>.ai-edit-trigger,.ai-field:focus-within>.ai-edit-trigger,.ai-field.ai-open>.ai-edit-trigger{opacity:1;pointer-events:auto}.full-edit .ai-edit-trigger,.full-edit .ai-inline{display:none!important}
+.ai-inline{flex:none;width:457px;max-width:calc(100% - 100px);margin:0 0 0 100px;padding:11px;border:1px solid #ffe863;border-radius:8px;background:white;display:flex;flex-direction:column;gap:8px;animation:review-reveal .2s ease-out}.ai-inline-top{display:flex;gap:4px;align-items:flex-start}.ai-inline-top>img{width:20px;height:20px;flex:none}.ai-inline textarea{display:block;min-width:0;flex:1;height:20px;resize:none;border:0;padding:2px 0;background:none;outline:0;color:#333;font:400 14px/16px Roboto,sans-serif}.ai-inline textarea::placeholder{color:#00000042}.ai-inline-bottom{display:flex;justify-content:space-between;align-items:flex-end}.ai-inline-cancel{border:0;background:none;padding:0;font:400 14px/16px Roboto,sans-serif;color:#0000008a}.ai-inline-send{width:32px;height:32px;border:0;border-radius:50%;background:#fee1d4;padding:6px}.ai-inline-send img{width:20px;height:20px}.ai-inline-send:not(:disabled){background:#ffd3bf}.ai-inline-send:disabled{cursor:default}.ai-inline-status{font:400 14px/20px Roboto,sans-serif;color:#999;display:flex;gap:4px;align-items:center;min-height:20px}.ai-inline-status:after{content:'…';animation:generation-breathe 1.2s infinite}.ai-inline.is-working .ai-inline-top>img{animation:generation-breathe 1.6s infinite}.ai-field-updated{animation:field-updated .6s ease-out}@keyframes field-updated{from{opacity:.35;transform:translateY(3px)}to{opacity:1;transform:none}}.description-row.ai-field>p{flex:0 1 calc(100% - 171px)}
+.ai-field{display:grid!important;grid-template-columns:88px minmax(0,max-content) minmax(59px,1fr);column-gap:12px;row-gap:8px}.ai-field>span,.ai-field>p{max-width:none}.ai-edit-trigger{justify-self:start}.ai-inline{grid-column:2 / -1;margin:0;max-width:100%}.description-row.ai-field{grid-template-columns:88px minmax(0,1fr) 59px}
+.ai-inline{min-height:84px}
+.listing-complete #thinking{display:none!important}.listing-complete #thinking-toggle .generation-chevron{display:none}.listing-complete #thinking-toggle:disabled{cursor:default;opacity:1}.listing-complete .generation-status{gap:8px}
+#confidence{margin-left:33px;width:calc(100% - 33px)}#confidence-summary{display:flex;gap:6px;align-items:center;max-width:100%;padding:8px 12px;border:0;border-radius:23px;background:#fafafa;color:#666;font:400 14px/16px Roboto,sans-serif;text-align:left}#confidence-summary>img:first-child{width:16px;height:16px;flex:none}#confidence-summary>i{width:.5px;height:11px;background:#e5e5e5;flex:none}.confidence-chevron{width:14px;height:14px;flex:none}
+#confidence-panel{height:264px;border-radius:4px;background:#fafafa;overflow:hidden;display:flex;flex-direction:column;padding:16px;gap:16px}#confidence-heading{flex:none;display:flex;justify-content:space-between;align-items:center;width:100%;padding:0;border:0;background:#fafafa;color:#666;font:400 14px/16px Roboto,sans-serif}#confidence-heading>span{display:flex;align-items:center;gap:6px}#confidence-heading>span>img{width:14px;height:14px}#confidence-heading>.confidence-chevron{transform:rotate(180deg)}#confidence-list{min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#ddd transparent;outline-offset:-1px}.confidence-item{position:relative;display:flex;gap:6px;padding-bottom:16px}.confidence-item:last-child{padding-bottom:0}.confidence-item>img{width:14px;height:14px;flex:none}.confidence-item:not(:last-child):before{content:'';position:absolute;left:6.5px;top:20px;bottom:8px;width:1px;background:#e5e5e5}.confidence-item>div{flex:1;min-width:0}.confidence-item-heading{display:flex;gap:12px;align-items:center;flex-wrap:wrap;min-height:20px}.confidence-item b{font:500 14px/16px Roboto,sans-serif;color:#333}.confidence-score{display:flex;align-items:center;gap:4px;font:400 12px/14px Roboto,sans-serif;color:#333}.confidence-score i{width:12px;height:12px;margin:4px;border-radius:50%;background:conic-gradient(#ff7925 var(--confidence),#e5e5e5 0);position:relative}.confidence-score i:after{content:'';position:absolute;inset:1.5px;background:#fafafa;border-radius:50%}.confidence-item p{color:#999;font:400 14px/16px Roboto,sans-serif;margin-top:4px}
+
+/* Preserve authored text above the first-image analysis indicator. */
+.analyzing .prompt-area{height:auto;min-height:76.5px}
+.analyzing #prompt{display:none}
+.analyzing #prompt-formatted{position:relative;top:auto;left:auto;height:auto;overflow:visible}
+.analyzing #prompt-loading{position:relative;top:auto;left:auto;margin-top:12px}
+.analyzing #prompt-formatted[hidden]+#prompt-loading{margin-top:0}
+#thinking-toggle{min-height:22px}#thinking-steps li,.remaining-steps li{min-height:16px}
+
+/* Figma 2378:28421 — compact field confidence heading. */
+.confidence-item-heading{gap:4px}.confidence-score{gap:0;font:500 14px/16px Roboto,sans-serif;color:#333}
+
+/* Figma 1796:14246 / 2387:42381 / 2387:43878 / 2348:20917 */
+#upload{justify-content:flex-end;padding:12px 8px;background:#fafafa}
+#upload>img{width:28px;height:28px;flex:0 0 28px}
+#upload>span{font-size:12px;line-height:12px}
+.actions{position:relative;min-height:40px;align-items:flex-end;justify-content:space-between}
+.source-control{position:relative;display:flex;align-items:center;gap:12px;min-height:24px}
+#web-url-button,#web-url-chip{height:24px;border:0;border-radius:4px;background:#f5f5f5;display:flex;align-items:center;gap:4px;padding:4px 6px;color:#666;font:400 14px/16px Roboto,sans-serif}
+#web-url-button>img{width:12px;height:12px}
+#web-url-chip{color:#2673dd}
+#web-url-chip>button{width:12px;height:12px;padding:0;border:0;background:none}
+#web-url-chip>button img{width:12px;height:12px}
+#url-popover{position:absolute;left:0;bottom:28px;width:485px;z-index:30;filter:drop-shadow(0 0 8px #0000001a) drop-shadow(0 8px 8px #0000000a)}
+#url-popover>.url-popover-body{height:199px;padding:16px;border-radius:4px;background:white;display:grid;grid-template-columns:1fr auto;grid-template-rows:16px 95px 24px;gap:16px 0}
+#url-popover>img{width:85px;height:6px}
+.url-popover-body h3{grid-column:1/-1;margin:0;font:500 14px/16px Roboto,sans-serif}
+#url-input{grid-column:1/-1;width:453px;height:75px;padding:8px;border:1px solid #e5e5e5;border-radius:4px;background:#fff;color:#333;font:400 14px/16px Roboto,sans-serif;resize:none}
+#url-input::placeholder{color:#999}
+#url-count{position:absolute;right:16px;top:126px;color:#999;font:400 14px/16px Roboto,sans-serif}
+#confirm-url{grid-column:2;height:24px;padding:5px 12px;border:1px solid #ee4d2d;border-radius:4px;background:#ee4d2d;color:white;font:500 12px/14px Roboto,sans-serif}
+#confirm-url:disabled{opacity:.5}
+#example{width:485px}
+#example .example-body.example-guide{display:flex;gap:16px;align-items:stretch;padding:16px}
+.example-upload-demo{width:96px;height:96px;flex:none;border:1px dashed #b7b7b7;border-radius:6px;background:#fafafa;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:flex-end;padding:12px 8px;color:#999;text-align:center;font:400 12px/12px Roboto,sans-serif}
+.example-upload-demo img{width:28px;height:28px}
+.example-prompt-demo{flex:1;border-top:.5px solid #eeac2d;padding-top:12px;color:#999;font:400 14px/18px Roboto,sans-serif}
+.example-prompt-demo strong{display:block;margin-bottom:8px;color:#333;font-weight:500}
+#example .example-prompt-demo p{margin:0}
+@media(max-width:650px){#url-popover{width:min(485px,calc(100vw - 48px))}#url-popover>.url-popover-body{width:100%}#url-input{width:100%}}
+
+/* Orange/red gradient outline and immediate cancel dismissal. */
+.ai-inline{border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(110deg,#ffa628 0%,#ee4d2d 58%,#ffd466 100%) border-box}
+.ai-field.ai-dismissed>.ai-edit-trigger{opacity:0;pointer-events:none}
+
+/* Figma 2360:25153 / 2348:16714 — upload example and transparent upload entry. */
+#upload{background:transparent}
+#example{left:auto;right:0;width:353px}
+#example .example-body{padding:16px;display:flex;flex-direction:column;gap:16px}
+#example .example-intro{font:400 14px/16px Roboto,sans-serif;color:#333}
+#example .example-cards{display:block;margin:0;overflow:visible}
+#example .example-card{width:321px;padding:12px;border:1px solid rgba(238,77,45,.18);background:rgba(254,246,245,.45);border-radius:6px}
+.example-card-heading{display:flex;align-items:flex-start;justify-content:space-between;white-space:nowrap}
+#example .example-card h3{margin:0;font:500 14px/16px Roboto,sans-serif;color:#333}
+.example-card-heading>span{font:400 12px/14px Roboto,sans-serif;color:#999}
+#example .example-images{display:flex;gap:16px;width:auto;margin-top:12px;overflow:visible}
+#example .example-images figure{width:auto;flex:none;margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;overflow:visible}
+#example .example-thumb{width:54px;height:54px;border:1px solid #e0e1e5;border-radius:6px}
+#example .example-thumb img{width:400%;height:158.23%;max-width:none;top:-29.11%}
+#example .example-images figure:nth-child(1) img{left:0}
+#example .example-images figure:nth-child(2) img{left:-100%}
+#example .example-images figure:nth-child(3) img{left:-200%}
+#example .example-images figure:nth-child(4) img{left:-300%}
+#example .example-images figcaption{font:400 12px/18px Roboto,sans-serif;color:#999;white-space:nowrap}
+#example .example-description{width:auto;min-height:0;margin-top:12px;font:400 12px/14px Roboto,sans-serif;color:#666}
+
+/* Figma 2415:25155 / 2415:26045 — concise review suggestions. */
+#confidence-summary{width:max-content;max-width:100%;gap:6px;padding:8px 12px;border-radius:22px;white-space:nowrap}
+#confidence-summary>span{overflow:hidden;text-overflow:ellipsis}
+#confidence-panel{width:100%;height:176px;padding:12px 16px;gap:12px;background:#fafafa}
+#confidence-heading{background:transparent}
+#confidence-heading>span{font:400 14px/16px Roboto,sans-serif;color:#666}
+#confidence-list{padding-right:8px}
+.confidence-item{gap:8px;padding-bottom:12px}
+.confidence-item:not(:last-child):before{top:18px;bottom:6px}
+.confidence-item-heading{min-height:16px}
+.confidence-item p{max-width:720px;margin-top:4px;font:400 12px/16px Roboto,sans-serif;color:#999}
+
+/* Figma 2415:25795 / 2425:43868 — marketing cards and expandable Boost Traffic details. */
+.marketing-cards{align-items:stretch}
+.marketing-cards.boost-expanded{align-items:flex-start}
+.marketing-cards article{align-items:flex-start;flex-wrap:wrap;border-color:rgba(238,77,45,.18);background:rgba(254,246,245,.45);transition:border-color .2s ease,background-color .2s ease}
+.marketing-cards article>div.marketing-main{flex:1;min-width:0}
+.marketing-cards .marketing-join{height:32px;padding:0 16px;border:1px solid #ee4d2d;border-radius:4px;background:#fff;color:#ee4d2d;font:500 14px/16px Roboto,sans-serif}
+.boost-toggle{display:flex;align-items:center;gap:8px;width:100%;height:auto!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#ee4d2d!important;text-align:left;font:500 14px/16px Roboto,sans-serif!important}
+.boost-toggle img{width:12px;height:12px;filter:none;transform:rotate(0deg);transition:transform .24s cubic-bezier(.2,.8,.2,1)}
+.boost-toggle[aria-expanded=true] img{transform:rotate(180deg)}
+.boost-card .marketing-main>p{margin-left:20px}
+.boost-card:not(.expanded){row-gap:0}
+.marketing-cards article>.boost-details{flex:0 0 100%;display:grid;grid-template-rows:repeat(4,20px);gap:4px;max-height:0;padding:0 20px;overflow:hidden;border-top:0 solid rgba(229,229,229,.7);opacity:0;transform:translateY(-4px);transition:max-height .28s cubic-bezier(.2,.8,.2,1),padding .28s cubic-bezier(.2,.8,.2,1),opacity .18s ease,transform .28s cubic-bezier(.2,.8,.2,1),border-width .28s ease}
+.boost-card.expanded .boost-details{max-height:116px;padding-top:12px;border-top-width:.5px;opacity:1;transform:translateY(0)}
+.boost-detail-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;color:#666;font:400 12px/16px Roboto,sans-serif;text-align:left}
+.boost-detail-value{display:flex;align-items:center;justify-self:end;justify-content:flex-end;gap:8px;color:#333;text-align:right}
+.boost-detail-value button{height:auto!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#2673dd!important;font:400 12px/16px Roboto,sans-serif!important}
+.boost-detail-value img{width:14px;height:14px}
+@media(max-width:850px){#confidence-summary{width:100%;white-space:normal}.boost-detail-row{grid-template-columns:minmax(0,1fr) auto}}
+
+/* Loading titles do not collapse. Pause and completed states keep the disclosure control. */
+.generation:not(.paused):not(.listing-complete) .generation-chevron{display:none}
+.generation:not(.paused):not(.listing-complete) #thinking-toggle{cursor:default}
+.paused .generation-chevron,.listing-complete #thinking-toggle .generation-chevron{display:block}
+.listing-complete #thinking:not([hidden]){display:block!important}
+#paused-edit-review[hidden]{display:none!important}
+
+/* Selected loading treatment: option 03 activity text and softened flow skeleton. */
+#thinking-steps li span,.remaining-steps li span,:is(#review-note,.completion-note){background:none;color:#969696}
+#thinking-steps li.active span,.remaining-steps li.active span,:is(#review-note,.completion-note):not([hidden]){background:linear-gradient(100deg,#777 25%,#e5a37e 50%,#777 75%);background-size:220% 100%;background-clip:text;color:transparent;animation:thinking-text-flow 4s ease-in-out infinite}
+.skeleton>div{background:linear-gradient(110deg,#faf9fa,#fdfcfd);border:1px solid rgba(243,239,240,.45);box-shadow:none;border-radius:12px}
+.skeleton>div:after{background:linear-gradient(100deg,transparent 30%,#ffffffb3 49%,#fff9f426 55%,transparent 70%);animation:skeleton-flow-sweep 3.8s ease-in-out infinite}
+.skeleton>div:nth-child(2):after{animation-delay:.15s}
+.skeleton>div:nth-child(3):after{animation-delay:.3s}
+@keyframes thinking-text-flow{0%,100%{background-position:100%}50%{background-position:0%}}
+@keyframes skeleton-flow-sweep{75%,100%{transform:translateX(100%)}}
+@media(prefers-reduced-motion:reduce){#thinking-steps li.active span,.remaining-steps li.active span,:is(#review-note,.completion-note):not([hidden]),.skeleton>div:after{animation:none}}
+
+/* Clip disclosure content while its height changes, moving following content smoothly. */
+#confidence{overflow:hidden;overflow:clip}
+
+/* Recognition mock: assistive strip sits behind the composer's rounded top edge. */
+#recognition-error{position:relative;margin-bottom:-10px;padding:12px 16px 20px;border:1px solid #fff;border-bottom:0;border-radius:12px 12px 0 0;background:#fff4f4;color:#ff4742;font:400 12px/14px Roboto,Arial,sans-serif;animation:appear .22s ease-out}
+.composer.recognition-failed{position:relative}
+
+#basic-information-heading{display:none;margin:0;font:500 18px/20px Roboto,sans-serif}
+.listing-complete #basic-information-heading{display:block}
+.listing-complete .completed-fields{padding-bottom:0;border-bottom:0}
+.completed-description-section{padding:16px 0;border-bottom:.5px solid #e5e5e580}
+.completed-description-section .description-row{margin-top:0}
+.listing-complete .completed-marketing{border-bottom:0}
+.full-edit .completed-description-section{display:none}
+.full-edit .completed-marketing{border-top:.5px solid #e5e5e580;margin-top:16px}
+
+/* Figma 2478:82476 — home upload layout. */
+.hero{margin-top:73px}
+.recommendation-heading{height:16px}
+#composer .actions{align-items:flex-end}
+#web-url-button{color:#333}
+#composer:not(.has-materials) #materials{overflow:visible}
+#composer:not(.has-materials) #upload{width:100%;height:232px;justify-content:flex-start;gap:12px;padding:24px 8px;border:1px dashed #eeac2d;border-radius:12px;background:#fafafa}
+#composer:not(.has-materials) #upload>img{width:28px;height:28px;flex:0 0 28px}
+#composer:not(.has-materials) #upload>span:first-of-type{font:400 14px/16px Roboto,sans-serif;background:linear-gradient(188.168deg,#eeac2d 15.679%,#ee4d2d 79.841%);background-clip:text;color:transparent}
+#upload>.upload-examples{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:12px;font:400 12px/18px Roboto,sans-serif;color:#999;white-space:normal}
+.upload-example-grid{display:flex;gap:16px}
+.upload-example-item{display:flex;flex-direction:column;align-items:center;gap:6px}
+.upload-example-thumb{position:relative;width:54px;height:54px;border:1px solid #e0e1e5;border-radius:6px;overflow:hidden}
+#upload .upload-example-thumb img{position:absolute;width:400%;height:158.23%;top:-29.11%;max-width:none;animation:none}
+.has-materials #upload>.upload-examples{display:none}
+#composer .prompt-area{border-top-color:#eeac2d}
+#inline-url-button{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;width:20px;height:18px;margin:0 4px;padding:3px 4px;background:#2673dd26;border:.5px solid #2673dd26;border-radius:4px;text-decoration:none}
+#inline-url-button img{width:12px;height:12px}
+@media(max-width:650px){.hero{margin-top:73px}.upload-example-grid{gap:10px}#composer:not(.has-materials) #upload>span:first-of-type{font-size:13px}}
+
+/* Match the reference: gradient dashed outline and a faint divider. */
+#composer:not(.has-materials) #upload{position:relative;border-color:transparent}
+.upload-outline{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.has-materials .upload-outline{display:none}
+#composer .prompt-area{border-top-color:rgba(238,172,45,.12)}
+
+#web-url-button{width:199px;height:32px;padding:8px 12px;white-space:nowrap}
+#inline-url-button{position:relative}
+.copy-url-hint{position:absolute;left:0;bottom:calc(100% + 3px);width:77px;padding:4px 8px;background:rgba(0,0,0,.5);border-radius:4px;color:#fff;font:400 14px/18px Roboto,sans-serif;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .15s}
+#inline-url-button:hover .copy-url-hint,#inline-url-button:focus-visible .copy-url-hint{opacity:1;visibility:visible}
+#inline-url-button[aria-expanded=true] .copy-url-hint{opacity:0;visibility:hidden}
+.prompt-area #url-popover{width:280px;bottom:auto;padding-top:6px}
+.prompt-area #url-popover>.url-popover-body{width:280px}
+.prompt-area #url-popover>img{position:absolute;top:0;left:0;transform:scaleY(-1)}
+.prompt-area #url-input{width:248px}
+.prompt-area #url-count{top:132px}
+.prompt-area #web-url-chip{position:absolute;top:12px;left:0;width:182px;z-index:2}
+#web-url-chip>img{width:12px;height:12px;flex:none}
+#web-url-chip>span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.has-url #prompt,.has-url #prompt-formatted{padding-left:192px;padding-top:4px}
+.has-url #placeholder{left:192px;top:16px}
+
+#web-url-button[aria-pressed=true]{width:217px;background:#fef6f5;color:#ee4d2d;border-radius:6px}
+#web-url-button>.ssp-close{width:14px;height:14px;flex:none}
+/* Compact controls under the thinking text, shared by both generation stages. */
+.generation-status>.generation-controls{justify-content:flex-start;min-height:24px;padding-left:33px}
+#pause-generation,#paused-controls button,.source-edit-actions button{width:auto;height:24px;padding:0 8px;border:1px solid #e5e5e5;border-radius:4px;background:#fff;color:#333;font:500 12px/16px Roboto,sans-serif}
+#paused-controls{gap:10px}
+#paused-controls #continue-generation,.source-edit-actions #source-continue{border-color:transparent;color:white;background:linear-gradient(218.947deg,#eeac2d 15.679%,#ee4d2d 79.841%)}
+#paused-controls #back-upload{display:none}
+#generation-source-editor{padding-left:33px;width:100%;display:flex;flex-direction:column;gap:12px}
+.source-edit-media{display:flex;flex-wrap:wrap;gap:16px}
+.source-edit-upload,.source-edit-tile{width:128px;height:128px;flex:none;border:1px solid #e5e5e5;border-radius:6px;position:relative;overflow:hidden}
+.source-edit-upload{border:1px dashed #b7b7b7;background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#999;font:400 12px/16px Roboto,sans-serif}
+.source-edit-upload>img{width:37px;height:37px}
+.source-edit-tile>img{width:100%;height:100%;object-fit:cover}
+.source-edit-tile>span{display:block;padding:12px;overflow-wrap:anywhere;font-size:12px}
+.source-edit-tile .remove img{width:14px;height:14px}
+#source-edit-prompt{height:97px;padding:16px;border:.5px solid #e5e5e5;border-radius:6px;background:#fafafa;color:#333;font:400 14px/normal Roboto,sans-serif}
+.source-edit-actions{display:flex;justify-content:flex-end;gap:12px}
+.editing-source .generation-controls,.editing-source .skeleton,.editing-source #review-details,.editing-source #listing-preview{display:none!important}
+.editing-source .generation-content{gap:12px}
+/* Result section header and information hierarchy (Figma 2478:86906). */
+#basic-information-header{display:none;align-items:center;justify-content:space-between;width:100%;min-height:24px;gap:16px}
+.listing-complete #basic-information-header{display:flex}
+#basic-information-header #basic-information-heading{margin:0;font:500 18px/20px Roboto,sans-serif}
+#result-edit-toggle{display:flex;align-items:center;gap:2px;padding:0;border:0;background:transparent;color:#2673dd;font:500 16px/24px Roboto,sans-serif;flex:none}
+#result-edit-toggle img{width:14px;height:14px}
+.listing-complete #confidence{display:none!important}
+.listing-complete .generation-status{gap:0}
+.full-edit #basic-information-header{position:sticky;top:0;z-index:5;background:#fffcfd;padding:8px 0;margin-top:-8px}
+
+.completion-note{margin:6px 0 0}
+</style></head><body>
+<div class="page">
+<div class="background" aria-hidden="true"><img class="glow-one" src="asset-imgEllipse8928.svg" alt=""><img class="glow-two" src="asset-imgEllipse8927.svg" alt=""></div>
+<header><img class="logo" src="asset-imgGroup.svg" alt="Shopee"><nav aria-label="Breadcrumb"><span>Home</span><img src="asset-imgIcon16X16ArrowRight.svg" alt=""><span>My Product</span><img src="asset-imgIcon16X16ArrowRight.svg" alt=""><span class="current">Add New Product</span></nav><div class="tools"><span><img src="asset-imgUnion.svg" alt="Apps"></span><span><img src="asset-imgUnion1.svg" alt="Seller guide"></span><span><img src="asset-imgIcon16X16Notice.svg" alt="Notifications"></span></div><div class="divider"></div><div class="account"><img class="avatar" src="asset-imgRectangle.png" alt="Shop avatar"><span>Nike Official Shop</span><img class="chevron" src="asset-imgIcon16X16ArrowDown.svg" alt=""></div></header>
+<div class="normal"><img src="asset-imgIcon16X16NoticeCircleS.svg" alt="">Normal Upload</div>
+<section class="hero"><div class="ai-title"><img src="asset-imgFrame2053141873.svg" alt="" class="spark"><h1>AI Upload</h1></div><h2>“Create Your Product listing with Me”</h2><p>Upload product materials or describe what you’re selling. AI will prepare a complete listing for you.</p></section>
+<main><form id="composer" class="composer"><div class="materials" id="materials"><button class="upload" type="button" id="upload" aria-label="Upload images, documents or video"><img src="asset-upload-plus.svg" alt=""><span>Images, video,<br>documents</span></button></div><input type="file" id="files" multiple hidden><div class="prompt-area"><textarea id="prompt" aria-label="Product prompt" spellcheck="false"></textarea><div id="prompt-formatted" aria-hidden="true" hidden></div><div id="prompt-loading" role="status" aria-live="polite" hidden><span class="analysis-dot"></span><span>Understanding your product<span class="analysis-ellipsis">…</span></span></div><div class="placeholder" id="placeholder">Input more details like size, price&nbsp; and your idea, Or you can copy a product’s URL into the input field. <button type="button" id="example-trigger" aria-expanded="false" aria-controls="example" aria-describedby="example">View upload example</button></div><aside id="example" role="tooltip" hidden><img class="example-arrow" src="asset-example-imgFrame.svg" alt=""><div class="example-body"><p class="example-intro">Upload product images or files, and add a prompt with any extra details. More context helps AI create a better listing. Here are some example :</p><div class="example-cards"><article class="example-card"><h3>Fashion apparel</h3><div class="example-materials"><div class="example-images"><span class="example-thumb"><img src="asset-example-imgRectangle.png" alt="Fashion apparel material 1" style="width:400%;left:0%"></span><span class="example-thumb"><img src="asset-example-imgRectangle.png" alt="Fashion apparel material 2" style="width:400%;left:-100%"></span><span class="example-thumb"><img src="asset-example-imgRectangle.png" alt="Fashion apparel material 3" style="width:400%;left:-200%"></span></div><p class="example-description">Relaxed-fit cotton polo. Highlight breathable fabric, fit and size range.</p></div><p class="example-count">3 materials · 1 description</p></article><article class="example-card"><h3>Beauty & skincare</h3><div class="example-materials"><div class="example-images"><span class="example-thumb"><img src="asset-example-imgRectangle1.png" alt="Beauty & skincare material 1" style="width:300%;left:0%"></span><span class="example-thumb"><img src="asset-example-imgRectangle1.png" alt="Beauty & skincare material 2" style="width:300%;left:-100%"></span><span class="example-thumb"><img src="asset-example-imgRectangle1.png" alt="Beauty & skincare material 3" style="width:300%;left:-200%"></span></div><p class="example-description">Hydrating serum for sensitive skin. Explain texture, ingredients and usage.</p></div><p class="example-count">3 materials · 1 description</p></article><article class="example-card"><h3>Home & living</h3><div class="example-materials"><div class="example-images"><span class="example-thumb"><img src="asset-example-imgRectangle2.png" alt="Home & living material 1" style="width:300%;left:0%"></span><span class="example-thumb"><img src="asset-example-imgRectangle2.png" alt="Home & living material 2" style="width:300%;left:-100%"></span><span class="example-thumb"><img src="asset-example-imgRectangle2.png" alt="Home & living material 3" style="width:300%;left:-200%"></span></div><p class="example-description">Minimal bedside lamp. Include material, warm light and compact dimensions.</p></div><p class="example-count">3 materials · 1 description</p></article></div></div></aside></div><div class="actions"><button id="create" type="submit" disabled>Start Creating<img src="asset-imgVector1022.svg" alt=""></button></div></form>
+<section class="recommendations"><div class="recommendation-heading"><div class="recommend-label"><span class="bulb"><img src="asset-imgFrame2053141372.svg" alt=""></span><span>Recommend <em>Opportunity Product</em> for you</span></div><span class="more">More <img src="asset-imgIcon16X16Image.svg" alt=""></span><label class="search"><input id="search" aria-label="Search recommended products" placeholder="Search by name, image or universal code"><img src="asset-imgSearchIcon.svg" alt=""></label></div><div class="products" id="products"></div></section>
+</main>
+<section id="generation" class="generation" aria-label="Creating product details" hidden>
+<div class="generation-content"><div class="generation-status">
+<button type="button" id="thinking-toggle" aria-expanded="true" aria-controls="thinking"><img class="generation-spark" src="asset-loading-ai.svg" alt=""><span>Generate your key product details...</span><img class="generation-chevron" src="asset-loading-chevron.svg" alt=""></button>
+<div id="thinking"><div id="thinking-scroll" tabindex="0" aria-label="Generation activity"><ol id="thinking-steps"></ol><p id="review-note" hidden>These details will guide the rest of your listing. item needs your confirmation, Review them carefully before continuing.</p></div><img class="thinking-fade" src="asset-review-imgRectangle346241518.png" alt="" hidden></div>
+</div><div class="skeleton" aria-hidden="true"><div></div><div></div><div></div></div><section id="review-details" hidden><div id="review-summary"><h2 id="review-title">New Balance 1000 silver metallic comfortable</h2><div id="review-category"></div></div><div id="review-fields" hidden><label><span><b>* </b>Title</span><input id="review-title-input" aria-label="Title" required value="New Balance 1000 silver metallic comfortable"></label><label><span><b>* </b>Category</span><input id="review-category-input" aria-label="Category" required value="Health &amp; Beauty &gt; Skincare &gt; Mask"></label></div><div id="review-gallery"></div><section id="completed-info" hidden><div class="completed-fields"><div><b>Title</b><span id="completed-title"></span></div><div><b>Category</b><span id="completed-category"></span></div><div><b>Price</b><span class="completed-price">Rp 1.000.000</span></div><div><b>Stock</b><span>100</span></div><div><b>Attributes</b><span class="attributes"><span>Brand : Nike,</span><span>Warranty Duration : 5 years,</span><span>Warranty Duration : 5 years,</span></span></div><div><b>Shipping Fee</b><span>Instant · Free : J&amp;T · Rp 12.000</span></div></div><section class="completed-marketing"><h3>Markteing</h3><div class="marketing-cards"><article><div><h4>Boost Traffic and Gain Voucher</h4><p>Quick setup, and Shopee will boost traffic and provide platform-sponsored vouchers to attract buyers.</p></div><button type="button">Join</button></article><article><div><h4>Affiliate Marketing Solution</h4><p>Leverage on Shopee’s extensive network of affiliate partners to boost your store promotion</p></div><button type="button">Join</button></article></div></section><section class="completed-other"><h3>Other Information</h3><div class="description-row"><b>Description</b><p id="completed-description">This fashionable slim-fit multi-color yoga short-sleeve top features a well-thought-out tailored cut. It hugs your figure gently without squeezing or digging in, offering great inclusiveness for various body shapes and zero pressure during workouts. Crafted from highly stretchable and breathable fabric, it delivers an ultra-soft skin-friendly touch with outstanding moisture-wicking performance. It quickly draws sweat away from your skin to keep you dry, preventing sticky discomfort even during long yoga sessions, pilates practice or high-intensity fitness training.</p></div><button id="view-all-details" type="button" aria-expanded="false">View All <img src="asset-loading-chevron.svg" alt=""></button></section></section></section></div>
+<div class="generation-controls"><button type="button" id="pause-generation" aria-label="Pause generation" title="Pause generation"><img src="asset-loading-pause.svg" alt=""></button><div id="paused-controls" hidden><button type="button" id="back-upload">Back to Upload</button><button type="button" id="continue-generation">Continue</button></div></div>
+<div id="review-controls" hidden><button type="button" id="edit-review">Edit</button><button type="button" id="confirm-listing">Confirm &amp; generate full listing</button></div><div id="completed-controls" hidden><button type="button">Save</button><button type="button">Edit</button><button type="button">Publish Product</button></div><aside id="listing-preview" aria-label="Full listing preview loading" hidden><div class="pdp-hero"><img src="asset-pdp-imgShoeEcommerceHero.png" alt="Product preview"></div><div class="pdp-status"><span>9:41</span><img src="asset-pdp-imgCellularConnection.svg" alt=""><img src="asset-pdp-imgWifi.svg" alt=""><span class="pdp-battery"></span></div><div class="pdp-nav"><img src="asset-pdp-imgIcBack.svg" alt=""><span></span><img src="asset-pdp-imgFrame2053143431.svg" alt=""><img src="asset-pdp-imgFrame2053143432.svg" alt=""><img src="asset-pdp-imgFrame2053143433.svg" alt=""></div><span class="pdp-count">1/15</span><div class="pdp-info"><div class="pdp-price"><small>Rp</small>198.000</div><p id="pdp-title"></p><p>Color</p><div class="pdp-colors"><img src="asset-pdp-imgImg11453.png" alt=""><img src="asset-pdp-imgImg11454.png" alt=""></div><p>Size: <i></i></p><div class="pdp-size"></div><div class="pdp-complete-size" hidden><div><span>S</span><span class="selected">M</span><span class="unavailable">L</span><span>XL</span></div><p>Height: 165cm - 170cm, Shoulder: 40cm, Waist 72cm</p></div><div class="pdp-shipping"><img src="asset-pdp-imgIcShipping.svg" alt=""><i></i><img src="asset-pdp-imgIcRight12.svg" alt=""></div></div><div class="pdp-footer"><div><img src="asset-pdp-imgIcChat.svg" alt="">Chat Now</div><div><img src="asset-pdp-imgIcChat.svg" alt="">Add to Cart</div><div>Buy with Voucher<br><strong>Rp198.000</strong></div></div><div class="pdp-home"><i></i></div><div class="pdp-shade"></div><div class="pdp-shine"></div><div class="pdp-loading"><img src="asset-pdp-imgFrame2053141873.svg" alt=""><p>preview will be available when generation complete.</p></div></aside><span id="generation-announcement" class="sr-only" role="status" aria-live="polite"></span></section><div role="status" id="status" class="toast" hidden></div></div><dialog id="image-viewer" aria-label="Product image preview"><button type="button" id="close-viewer" aria-label="Close image preview">×</button><img id="large-image" alt="Product image"></dialog><script>const prompt=document.querySelector('#prompt'),create=document.querySelector('#create'),picker=document.querySelector('#files'),materials=document.querySelector('#materials'),composer=document.querySelector('#composer');
+let files=[],toastTimer,analysisTimer,analyzing=false;
+let recognitionFailed=false;
+const recognitionError=document.createElement('div');
+recognitionError.id='recognition-error';recognitionError.setAttribute('role','alert');recognitionError.hidden=true;
+recognitionError.textContent='Recognition failed. Please upload at least one image for more accurate generation results.';
+composer.before(recognitionError);
+function clearRecognitionError(){recognitionFailed=false;recognitionError.hidden=true;composer.classList.remove('recognition-failed');}
+function showRecognitionError(){recognitionFailed=true;recognitionError.hidden=false;composer.classList.add('recognition-failed');create.disabled=true;}
+
+const demoPrompt='This is a lightweight running shoe designed for road running and daily training. It is mainly for active adults and runners.';
+const loading=document.querySelector('#prompt-loading'),formatted=document.querySelector('#prompt-formatted');
+function paintPrompt(){formatted.replaceChildren();const parts=prompt.value.split(/(lightweight running shoe|road running and daily training|active adults and runners)/g);for(const part of parts){const span=document.createElement('span');span.textContent=part;if(['lightweight running shoe','road running and daily training','active adults and runners'].includes(part))span.className='prompt-slot';formatted.append(span)}formatted.hidden=!prompt.value;}
+function cancelAnalysis(){clearTimeout(analysisTimer);analyzing=false;loading.hidden=true;prompt.readOnly=false;prompt.setAttribute('aria-busy','false');}
+function demoUpload(){
+ if(analyzing||files.some(f=>f.demo))return;
+ clearRecognitionError();hideExample();const previous=prompt.value;
+ files.push({demo:true,file:{name:'Running shoe.png',type:'image/png'},url:'asset-demo-shoe.png'});
+ analyzing=true;prompt.readOnly=true;prompt.setAttribute('aria-busy','true');loading.hidden=false;renderFiles();
+ analysisTimer=setTimeout(()=>{
+  cancelAnalysis();prompt.value=previous.trim()?previous+(previous.endsWith('\n')?'\n':'\n\n')+demoPrompt:demoPrompt;
+  update();prompt.scrollTop=0;formatted.scrollTop=0;
+ },1400);
+}
+
+function update(){create.disabled=recognitionFailed||analyzing||(!prompt.value.trim()&&!files.length);document.querySelector('#placeholder').hidden=analyzing||!!prompt.value;composer.classList.toggle('analyzing',analyzing);paintPrompt();}
+function notify(text){const n=document.querySelector('#status');n.textContent=text;n.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>n.hidden=true,3200)}
+function renderFiles(){materials.querySelectorAll('.file').forEach(n=>n.remove());files.forEach(item=>{const tile=document.createElement('div');tile.className='file';if(item.file.type.startsWith('image/')){const image=document.createElement('img');image.src=item.url;image.alt=item.file.name;tile.append(image)}else{const label=document.createElement('span');label.className='file-name';label.textContent=item.file.name;tile.append(label)}const remove=document.createElement('button');remove.type='button';remove.className='remove';const closeIcon=document.createElement('img');closeIcon.src='asset-remove-file.svg';closeIcon.alt='';remove.append(closeIcon);remove.setAttribute('aria-label','Remove '+item.file.name);remove.onclick=()=>{if(!item.demo)URL.revokeObjectURL(item.url);files=files.filter(f=>f!==item);if(item.demo)cancelAnalysis();renderFiles()};tile.append(remove);materials.append(tile)});update()}
+function addFiles(list){for(const file of list)files.push({file,url:URL.createObjectURL(file)});renderFiles()}
+document.querySelector('#upload').onclick=()=>{picker.value='';picker.click()};picker.onchange=()=>{const selected=picker.files.length>0;picker.value='';if(selected)demoUpload()};prompt.addEventListener('input',()=>{clearRecognitionError();update()});prompt.addEventListener('scroll',()=>formatted.scrollTop=prompt.scrollTop);
+let dragDepth=0;composer.addEventListener('dragenter',e=>{e.preventDefault();dragDepth++;composer.classList.add('dragging')});composer.addEventListener('dragover',e=>e.preventDefault());composer.addEventListener('dragleave',()=>{if(!--dragDepth)composer.classList.remove('dragging')});composer.addEventListener('drop',e=>{e.preventDefault();dragDepth=0;composer.classList.remove('dragging');if(e.dataTransfer.files.length)demoUpload()});
+composer.addEventListener('submit',e=>{e.preventDefault();if(create.disabled)return;if(!files.some(item=>item.file.type.startsWith('image/'))){showRecognitionError();return;}clearRecognitionError();window.dispatchEvent(new CustomEvent('ai-upload:create',{detail:{prompt:prompt.value.trim(),files:files.map(f=>f.file)}}));startGeneration()});
+const example=document.querySelector('#example'),trigger=document.querySelector('#example-trigger');
+let exampleCloseTimer;
+function showExample(){clearTimeout(exampleCloseTimer);example.hidden=false;trigger.setAttribute('aria-expanded','true')}
+function hideExample(){clearTimeout(exampleCloseTimer);example.hidden=true;trigger.setAttribute('aria-expanded','false')}
+function scheduleHideExample(){clearTimeout(exampleCloseTimer);exampleCloseTimer=setTimeout(hideExample,160)}
+trigger.addEventListener('mouseenter',showExample);
+trigger.addEventListener('mouseleave',scheduleHideExample);
+example.addEventListener('mouseenter',()=>clearTimeout(exampleCloseTimer));
+example.addEventListener('mouseleave',scheduleHideExample);
+trigger.addEventListener('focus',showExample);
+trigger.addEventListener('blur',scheduleHideExample);
+trigger.onclick=showExample;
+prompt.addEventListener('input',hideExample);
+document.addEventListener('click',e=>{if(!example.contains(e.target)&&e.target!==trigger)hideExample()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideExample()});
+const products=document.querySelector('#products');for(let i=0;i<3;i++){const card=document.createElement('article');card.className='product';card.innerHTML='<div class="product-body"><img class="product-image" src="asset-imgImg11453.png" alt="New Balance silver sneaker"><div class="product-copy"><p class="sku">SSP1293024</p><p class="product-title">New Balance 1000 silver metallic comfortable...</p><p class="stats">Views: 218,689<span> | </span>Sales: 18,689</p></div></div><button class="link" type="button">Link</button>';card.querySelector('button').onclick=()=>{prompt.value='Create a listing for New Balance 1000 silver metallic comfortable shoes. Product reference: SSP1293024.';update();prompt.focus()};products.append(card)}document.querySelector('#search').oninput=e=>{for(const c of products.children)c.hidden=!c.textContent.toLowerCase().includes(e.target.value.trim().toLowerCase())};update();
+
+const generation=document.querySelector('#generation'),thinking=document.querySelector('#thinking'),thinkingSteps=document.querySelector('#thinking-steps'),thinkingToggle=document.querySelector('#thinking-toggle'),pauseGeneration=document.querySelector('#pause-generation'),pausedControls=document.querySelector('#paused-controls'),generationAnnouncement=document.querySelector('#generation-announcement');
+const pausedEditReview=document.createElement('button');pausedEditReview.type='button';pausedEditReview.id='paused-edit-review';pausedEditReview.textContent='Edit';pausedEditReview.hidden=true;pausedControls.insertBefore(pausedEditReview,document.querySelector('#continue-generation'));
+const generationSteps=['Understanding your product','Identifying the product type','Creating images, title and video','Checking category and content consistency'];
+let generationTimer,stepIndex=0,stepRemaining=3000,stepDeadline=0,generationPaused=false;
+function revealStep(){
+  const previous=thinkingSteps.lastElementChild;if(previous)previous.classList.remove('active');
+  const item=document.createElement('li');item.className='active';
+  const bullet=document.createElement('img');bullet.src='asset-loading-bullet.svg';bullet.alt='';
+  const text=document.createElement('span');text.textContent=generationSteps[stepIndex++];item.append(bullet,text);thinkingSteps.append(item);
+  generationAnnouncement.textContent=text.textContent;typeThinking(text,text.textContent);stepRemaining=Math.max(3000,generationSteps[stepIndex-1].length/22.5*1000+200);
+}
+function scheduleStep(){if(remainingMode){scheduleRemaining();return;}stepDeadline=performance.now()+stepRemaining;generationTimer=setTimeout(()=>{if(stepIndex>=generationSteps.length){if(thinkingTyping.size){stepRemaining=100;scheduleStep();return;}showReview();return}revealStep();scheduleStep()},stepRemaining)}
+function startGeneration(){
+  clearTimeout(generationTimer);resetReview();hideExample();document.querySelector('#status').hidden=true;stepIndex=0;stepRemaining=3000;generationPaused=false;thinkingSteps.replaceChildren();
+  thinking.hidden=false;thinkingToggle.setAttribute('aria-expanded','true');generation.classList.remove('paused');pauseGeneration.hidden=false;pausedControls.hidden=true;pausedEditReview.hidden=true;
+  document.querySelector('.page').classList.add('is-generating');generation.hidden=false;scheduleStep();thinkingToggle.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});
+}
+thinkingToggle.onclick=()=>{thinking.hidden=!thinking.hidden;thinkingToggle.setAttribute('aria-expanded',String(!thinking.hidden))};
+pauseGeneration.onclick=()=>{
+  if(generationPaused)return;generationPaused=true;clearTimeout(generationTimer);stepRemaining=Math.max(0,stepDeadline-performance.now());
+  generation.classList.add('paused');pauseGeneration.hidden=true;pausedControls.hidden=false;pausedEditReview.hidden=reviewDetails.hidden;document.querySelector('#thinking-toggle>span').textContent='Stop generation. You can now edit or continue.';generationAnnouncement.textContent='Generation paused';document.querySelector('#continue-generation').focus({preventScroll:true});
+};
+document.querySelector('#continue-generation').onclick=()=>{
+  if(!generationPaused)return;if(editingReview&&(!reviewTitleInput.reportValidity()||!reviewCategoryInput.reportValidity()))return;setReviewEditing(false);generationPaused=false;generation.classList.remove('paused');pauseGeneration.hidden=false;pausedControls.hidden=true;pausedEditReview.hidden=true;document.querySelector('#thinking-toggle>span').textContent=remainingMode?'Generate all remaining product details':'Generate your key product details...';generationAnnouncement.textContent='Generation resumed';scheduleStep();pauseGeneration.focus({preventScroll:true});
+};
+document.querySelector('#back-upload').onclick=()=>{
+  clearTimeout(generationTimer);resetRemaining();generation.hidden=true;document.querySelector('.page').classList.remove('is-generating');generationAnnouncement.textContent='';update();create.focus({preventScroll:true});
+};
+
+const reviewDetails=document.querySelector('#review-details'),reviewControls=document.querySelector('#review-controls'),reviewFields=document.querySelector('#review-fields'),reviewSummary=document.querySelector('#review-summary'),reviewTitleInput=document.querySelector('#review-title-input'),reviewCategoryInput=document.querySelector('#review-category-input'),reviewNote=document.querySelector('#review-note'),thinkingScroll=document.querySelector('#thinking-scroll'),thinkingFade=document.querySelector('.thinking-fade'),viewer=document.querySelector('#image-viewer');
+let editingReview=false,reviewTransitionTimer,lastImageButton;
+const reviewAssets=['asset-review-imgShoeEcommerceHero.png','asset-review-imgImage2375.png','asset-review-imgImage2376.png','asset-review-imgImg114516.png','asset-review-imgImage2377.png','asset-review-imgImage2378.png','asset-review-imgImage2379.png'];
+reviewAssets.forEach((asset,i)=>{
+ const tile=document.createElement('div');tile.className='review-tile';tile.style.setProperty('--tile-delay',`${100+i*45}ms`);
+ const button=document.createElement('button');button.type='button';button.className='review-image';button.setAttribute('aria-label',i===6?'View video thumbnail':'View product image '+(i+1));
+ const img=document.createElement('img');img.src=asset;img.alt=i===6?'Product video thumbnail':'New Balance shoe — view '+(i+1);if(i===0)img.className='hero-crop';button.append(img);
+ button.onclick=()=>{lastImageButton=button;document.querySelector('#large-image').src=img.src;viewer.showModal()};tile.append(button);
+ if(i<3||i===6){const badge=document.createElement('span');badge.className='review-ai';badge.innerHTML='<span>AI</span>';tile.append(badge)}
+ if(i===6){const duration=document.createElement('span');duration.className='video-duration';duration.textContent='27:00';tile.append(duration)}
+ if(i<6){const overlay=document.createElement('div');overlay.className='image-edit-overlay';overlay.setAttribute('aria-label','Image edit tools');overlay.innerHTML='<button type="button" aria-label="AI image edit"><img src="asset-hover-imgGroup.svg" alt=""></button><i></i><button type="button" aria-label="Edit image"><img src="asset-hover-imgFrame.svg" alt=""></button><i></i><button type="button" aria-label="Delete image"><img src="asset-hover-imgIcon16X16Trash.svg" alt=""></button>';tile.append(overlay)}
+ document.querySelector('#review-gallery').append(tile);
+});
+function syncReview(){document.querySelector('#review-title').textContent=reviewTitleInput.value;const category=document.querySelector('#review-category');category.replaceChildren();reviewCategoryInput.value.split('>').forEach((part,i)=>{if(i){const arrow=document.createElement('img');arrow.src='asset-review-imgPath1.svg';arrow.alt='';category.append(arrow)}const span=document.createElement('span');span.textContent=part.trim();category.append(span)})}
+function setReviewEditing(edit){editingReview=edit;generation.classList.toggle('editing-review',edit);reviewFields.hidden=!edit;reviewSummary.hidden=edit;document.querySelector('#edit-review').textContent=edit?'Preview':'Edit';pausedEditReview.textContent=edit?'Preview':'Edit';syncReview()}
+function resetReview(){resetRemaining();clearTimeout(reviewTransitionTimer);generation.classList.remove('is-review','review-entering','review-ready','editing-review');reviewDetails.hidden=true;reviewControls.hidden=true;reviewNote.hidden=true;thinkingFade.hidden=true;document.querySelector('.skeleton').hidden=false;document.querySelector('.generation-controls').hidden=false;thinkingScroll.scrollTop=0;document.querySelector('#thinking-toggle>span').textContent='Generate your key product details...';setReviewEditing(false)}
+function showReview(){
+ generation.classList.add('is-review','review-ready');generation.classList.remove('paused','review-entering');
+ reviewNote.textContent='Basic details are ready. Generating the remaining product information.';reviewNote.hidden=false;typeThinking(reviewNote,reviewNote.textContent,67.5);thinkingFade.hidden=thinking.hidden;thinkingScroll.scrollTop=thinkingScroll.scrollHeight;
+ reviewControls.hidden=true;
+ thinkingSteps.querySelectorAll('.active').forEach(el=>el.classList.remove('active'));
+ document.querySelector('.skeleton').hidden=false;reviewDetails.hidden=true;reviewSummary.hidden=true;syncReview();
+ generationAnnouncement.textContent='Checking the generated key product details';
+ const continueAfterNote=()=>{if(generationPaused||thinkingTyping.has(reviewNote)){reviewTransitionTimer=setTimeout(continueAfterNote,80);return}generationAnnouncement.textContent='Key product details generated. Continuing with the remaining information';startRemaining()};
+ reviewTransitionTimer=setTimeout(continueAfterNote,80);
+}
+thinkingToggle.onclick=()=>{if(!generation.classList.contains('paused')&&!generation.classList.contains('listing-complete'))return;thinking.hidden=!thinking.hidden;thinkingToggle.setAttribute('aria-expanded',String(!thinking.hidden));if(!thinking.hidden&&generation.classList.contains('is-review')){thinkingFade.hidden=false;thinkingScroll.scrollTop=thinkingScroll.scrollHeight}};
+document.querySelector('#edit-review').onclick=()=>{if(editingReview&&(!reviewTitleInput.reportValidity()||!reviewCategoryInput.reportValidity()))return;setReviewEditing(!editingReview)};
+pausedEditReview.onclick=()=>{if(editingReview&&(!reviewTitleInput.reportValidity()||!reviewCategoryInput.reportValidity()))return;setReviewEditing(!editingReview)};
+document.querySelector('#close-viewer').onclick=()=>viewer.close();viewer.addEventListener('click',e=>{if(e.target===viewer)viewer.close()});viewer.addEventListener('close',()=>lastImageButton?.focus({preventScroll:true}));
+document.querySelector('#confirm-listing').onclick=()=>{if(!reviewTitleInput.reportValidity()||!reviewCategoryInput.reportValidity())return;syncReview();window.dispatchEvent(new CustomEvent('ai-upload:confirm',{detail:{title:reviewTitleInput.value,category:reviewCategoryInput.value}}));startRemaining()};
+syncReview();
+
+const listingPreview=document.querySelector('#listing-preview');
+const remainingSteps=['Writing the product description and completing attributes','Checking all product details for consistency'];
+let remainingMode=false,remainingIndex=0,remainingList,completionNote;
+function resetRemaining(){clearThinkingTyping();completionNote?.remove();completionNote=null;resetCompleted();remainingMode=false;generation.classList.remove('remaining-mode');listingPreview.hidden=true;remainingList?.remove();document.querySelector('.generation-content').insertBefore(document.querySelector('.skeleton'),reviewDetails);}
+function revealRemaining(){
+ const followBottom=thinkingScroll.scrollHeight-thinkingScroll.scrollTop-thinkingScroll.clientHeight<30;
+ remainingList.querySelectorAll('.active').forEach(n=>n.classList.remove('active'));
+ const li=document.createElement('li');li.className='active';const img=document.createElement('img');img.src='asset-loading-bullet.svg';img.alt='';const span=document.createElement('span');span.textContent=remainingSteps[remainingIndex++];li.append(img,span);remainingList.append(li);generationAnnouncement.textContent=span.textContent;typeThinking(span,span.textContent);stepRemaining=Math.max(3000,remainingSteps[remainingIndex-1].length/22.5*1000+200);
+ if(followBottom)thinkingScroll.scrollTo({top:thinkingScroll.scrollHeight,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+}
+function scheduleRemaining(){stepDeadline=performance.now()+stepRemaining;generationTimer=setTimeout(()=>{if(remainingIndex>=remainingSteps.length){if(thinkingTyping.size){stepRemaining=100;scheduleRemaining();return;}if(!completionNote){remainingList.querySelectorAll('.active').forEach(node=>node.classList.remove('active'));completionNote=document.createElement('p');completionNote.className='completion-note';thinkingScroll.append(completionNote);const copy='Your product listing is ready. Please review the details to ensure they accurately reflect your product before publishing.';typeThinking(completionNote,copy,67.5);generationAnnouncement.textContent=copy;thinkingScroll.scrollTop=thinkingScroll.scrollHeight;stepRemaining=100;scheduleRemaining();return;}finishListing();return}revealRemaining();scheduleRemaining()},stepRemaining)}
+function startRemaining(){
+ clearTimeout(generationTimer);setReviewEditing(false);
+ remainingMode=true;remainingIndex=0;stepRemaining=3000;generationPaused=false;
+ generation.classList.remove('paused');reviewControls.hidden=true;
+ reviewNote.hidden=false;reviewSummary.hidden=true;reviewControls.hidden=true;syncReview();reviewDetails.hidden=true;
+ document.querySelector('#thinking-toggle>span').textContent='Generate all remaining product details';document.querySelector('#pdp-title').textContent=reviewTitleInput.value;
+ const skeleton=document.querySelector('.skeleton');document.querySelector('.generation-content').append(skeleton);skeleton.hidden=false;
+ document.querySelector('.generation-controls').hidden=false;pauseGeneration.hidden=false;pausedControls.hidden=true;listingPreview.hidden=true;
+ remainingList=document.createElement('ol');remainingList.className='remaining-steps';thinkingScroll.append(remainingList);thinkingScroll.scrollTop=thinkingScroll.scrollHeight;scheduleRemaining();
+ thinkingToggle.focus({preventScroll:true});
+}
+
+const completedInfo=document.querySelector('#completed-info'),completedControls=document.querySelector('#completed-controls');
+function resetCompleted(){closeFullEditor();generation.classList.remove('listing-complete');completedInfo.hidden=true;completedControls.hidden=true;document.querySelector('.pdp-complete-size').hidden=true;listingPreview.setAttribute('aria-label','Full listing preview loading');}
+function finishListing(){
+ clearTimeout(generationTimer);generation.classList.add('listing-complete','remaining-mode');reviewDetails.hidden=false;listingPreview.hidden=false;generation.classList.remove('paused');thinking.hidden=true;thinkingToggle.setAttribute('aria-expanded','false');
+ document.querySelector('#thinking-toggle>span').textContent='Product information has been generated !';
+ document.querySelector('.skeleton').hidden=true;document.querySelector('.generation-controls').hidden=true;reviewSummary.hidden=true;
+ document.querySelector('#completed-title').textContent=reviewTitleInput.value;document.querySelector('#completed-category').replaceChildren(...[...document.querySelector('#review-category').childNodes].map(n=>n.cloneNode(true)));
+ completedInfo.hidden=false;completedControls.hidden=false;document.querySelector('.pdp-complete-size').hidden=false;listingPreview.setAttribute('aria-label','Full product listing preview');
+ generationAnnouncement.textContent='Product information has been generated';
+}
+document.querySelector('#view-all-details').onclick=e=>{const button=e.currentTarget,expanded=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!expanded));document.querySelector('#completed-description').classList.toggle('expanded',!expanded);button.firstChild.textContent=expanded?'View All ':'View Less ';};
+
+const fullEditor=document.createElement('div');fullEditor.className='full-editor';fullEditor.hidden=true;completedInfo.prepend(fullEditor);
+const editFields=[['Title','New Balance 1000 silver metallic comfortable'],['Category','Health & Beauty > Beauty > Shoes'],['Price','Rp 1.000.000'],['Stock','100']];
+const fullInputs={};
+for(const [name,value] of editFields){const row=document.createElement('label');row.className='edit-row';const label=document.createElement('span');label.innerHTML='<em>*</em>'+name;const input=document.createElement('input');input.setAttribute('aria-label','Edit '+name);input.value=value;input.required=true;fullInputs[name]=input;row.append(label,input);fullEditor.append(row)}
+const attributesRow=document.createElement('div');attributesRow.className='edit-row';attributesRow.innerHTML='<span><em>*</em>Attributes</span><div class="edit-attributes"></div>';
+for(const [name,value] of [['Brand','Nike'],['Warranty Duration','24 Month'],['Warranty Type','24 Month'],['Weight','24 Month'],['Dimension (L x W x H)','24 Month'],['Battery Capacity','24 Month']]){const label=document.createElement('label');label.textContent=name;const input=document.createElement('input');input.value=value;label.append(input);attributesRow.lastElementChild.append(label)}fullEditor.append(attributesRow);
+const shippingRow=document.createElement('div');shippingRow.className='edit-row';shippingRow.innerHTML='<span>Shipping Fee</span><div class="edit-shipping"></div>';
+const switchAssets=['asset-edit-switch-off.svg','asset-edit-switch-on.svg'];
+for(const [name,fee,on,disabled] of [['全家 (FM)-display','$12',true,false],['Poslaju - CB (max 30kg)','$8',false,false],['J&T','$12',true,false],['萊爾富（空運）','Set Shipping Fee',false,false],['S.F. Express','-',false,true]]){const row=document.createElement('div');row.className='shipping-row';const label=document.createElement('span');label.className='shipping-name';label.textContent=name;if(name.startsWith('全家')){const badge=document.createElement('span');badge.className='shipping-badge';badge.textContent='Shopee Supported Logistics';label.append(badge)}const cost=document.createElement('label');cost.className='shipping-fee';const input=document.createElement('input');input.value=fee;input.setAttribute('aria-label',name+' shipping fee');input.disabled=disabled;cost.append(input);if(!disabled){const icon=document.createElement('img');icon.src='asset-edit-pencil.svg';icon.alt='';cost.append(icon)}const toggle=document.createElement('button');toggle.type='button';toggle.className='shipping-switch';toggle.setAttribute('role','switch');toggle.setAttribute('aria-label',name);toggle.setAttribute('aria-checked',String(on));toggle.disabled=disabled;const img=document.createElement('img');img.src=disabled?'asset-edit-switch-disabled.svg':switchAssets[Number(on)];img.alt='';toggle.append(img);toggle.onclick=()=>{const checked=toggle.getAttribute('aria-checked')!=='true';toggle.setAttribute('aria-checked',String(checked));img.src=switchAssets[Number(checked)]};row.append(label,cost,toggle);shippingRow.lastElementChild.append(row)}fullEditor.append(shippingRow);
+const fullEditControls=document.createElement('div');fullEditControls.id='full-edit-controls';fullEditControls.hidden=true;fullEditControls.innerHTML='<button type="button">Save</button><button type="button">Upload</button>';completedControls.after(fullEditControls);
+function closeFullEditor(){generation.classList.remove('full-edit');document.querySelector('.page').classList.remove('is-full-edit');fullEditor.hidden=true;fullEditControls.hidden=true;document.querySelector('.completed-fields').hidden=false;}
+function openFullEditor(){fullInputs.Title.value=reviewTitleInput.value;fullInputs.Category.value=reviewCategoryInput.value;generation.classList.add('full-edit');document.querySelector('.page').classList.add('is-full-edit');completedControls.hidden=true;document.querySelector('.completed-fields').hidden=true;fullEditor.hidden=false;fullEditControls.hidden=false;document.querySelector('.generation-content').scrollTop=0;window.scrollTo({top:0,behavior:'instant'});}
+completedControls.children[1].onclick=openFullEditor;
+function saveFullEditor(){if(!Object.values(fullInputs).every(input=>input.reportValidity()))return false;reviewTitleInput.value=fullInputs.Title.value;reviewCategoryInput.value=fullInputs.Category.value;syncReview();document.querySelector('#completed-title').textContent=fullInputs.Title.value;document.querySelector('#completed-category').replaceChildren(...[...document.querySelector('#review-category').childNodes].map(n=>n.cloneNode(true)));document.querySelector('.completed-price').textContent=fullInputs.Price.value;document.querySelector('.completed-fields>div:nth-child(4)>span').textContent=fullInputs.Stock.value;document.querySelector('#pdp-title').textContent=fullInputs.Title.value;const values=[...attributesRow.querySelectorAll('input')];document.querySelector('.attributes').replaceChildren(...values.map(input=>{const span=document.createElement('span');span.textContent=input.parentElement.firstChild.textContent+' : '+input.value;return span}));closeFullEditor();completedControls.hidden=false;return true;}
+fullEditControls.children[0].onclick=()=>{if(saveFullEditor())notify('Changes saved')};
+fullEditControls.children[1].onclick=()=>{if(saveFullEditor())notify('Demo: product information is ready to upload')};
+
+const aiFieldPresets={Title:'New Balance 1000 Silver Metallic Lightweight Everyday Sneakers',Category:'Sports & Outdoors > Sports Shoes > Running Shoes',Price:'Rp 899.000',Stock:'150',Attributes:'Brand : New Balance, Material : Mesh and synthetic leather, Color : Silver metallic', 'Shipping Fee':'J&T · Rp 10.000 · Estimated delivery: 2–4 days',Description:'Step into everyday comfort with the New Balance 1000 in silver metallic. A breathable mesh upper with synthetic overlays creates a lightweight feel, while cushioned support keeps every step comfortable. Pair these versatile sneakers with your daily wardrobe for an effortless sporty look.'};
+let activeAiEditor;
+function closeAiEditor(){if(!activeAiEditor)return;clearTimeout(activeAiEditor.timer);activeAiEditor.form.remove();activeAiEditor.row.classList.remove('ai-open');activeAiEditor.trigger.setAttribute('aria-expanded','false');activeAiEditor.row.removeAttribute('aria-busy');activeAiEditor=null;}
+function applyAiField(name,value,target){
+ target.textContent=value;
+ if(fullInputs[name])fullInputs[name].value=value;
+ if(name==='Title'){reviewTitleInput.value=value;syncReview();document.querySelector('#pdp-title').textContent=value;}
+ if(name==='Category'){reviewCategoryInput.value=value;syncReview();target.replaceChildren(...[...document.querySelector('#review-category').childNodes].map(n=>n.cloneNode(true)));}
+ if(name==='Price'){const price=document.querySelector('.pdp-price');price.innerHTML='<small>Rp</small>';price.append(value.replace(/^Rp\s*/,''));document.querySelector('.pdp-footer strong').textContent=value;}
+ if(name==='Attributes'){const vals=['New Balance','24 Month','24 Month','320 g','30 x 20 x 12 cm','Not applicable'];attributesRow.querySelectorAll('input').forEach((input,i)=>input.value=vals[i]);}
+ target.classList.remove('ai-field-updated');requestAnimationFrame(()=>target.classList.add('ai-field-updated'));generationAnnouncement.textContent=name+' updated';
+}
+const aiRows=[];
+for(const row of aiRows){row.classList.add('ai-field');const name=row.querySelector('b').textContent.trim(),target=row.querySelector(':scope>span,:scope>p');const trigger=document.createElement('button');trigger.type='button';trigger.className='ai-edit-trigger';trigger.setAttribute('aria-label','AI Edit '+name);trigger.setAttribute('aria-expanded','false');trigger.innerHTML='<i><img src="asset-ai-edit-wand.svg" alt=""></i><span>AI Edit</span>';row.append(trigger);row.addEventListener('mouseleave',()=>row.classList.remove('ai-dismissed'));trigger.addEventListener('focus',()=>row.classList.remove('ai-dismissed'));
+ trigger.onclick=()=>{if(activeAiEditor?.row===row){closeAiEditor();return}closeAiEditor();const form=document.createElement('form');form.className='ai-inline';form.setAttribute('aria-label','AI edit '+name);form.innerHTML='<div class="ai-inline-top"><img src="asset-ai-edit-input.svg" alt=""><textarea rows="1" placeholder="Describe how to modify the result" aria-label="Instructions for '+name+'"></textarea><span class="ai-inline-status" role="status" hidden>Updating '+name.toLowerCase()+'</span></div><div class="ai-inline-bottom"><button type="button" class="ai-inline-cancel">Cancel</button><button type="submit" class="ai-inline-send" aria-label="Generate '+name+'" disabled><img src="asset-ai-edit-send.svg" alt=""></button></div>';row.append(form);row.classList.add('ai-open');trigger.setAttribute('aria-expanded','true');const textarea=form.querySelector('textarea'),send=form.querySelector('.ai-inline-send'),status=form.querySelector('.ai-inline-status');const session={row,form,trigger,timer:null};activeAiEditor=session;textarea.oninput=()=>send.disabled=!textarea.value.trim();textarea.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();form.requestSubmit() }if(e.key==='Escape'){closeAiEditor();trigger.focus()}};form.querySelector('.ai-inline-cancel').onclick=()=>{closeAiEditor();row.classList.add('ai-dismissed');trigger.blur()};form.onsubmit=e=>{e.preventDefault();if(!textarea.value.trim()||session.timer)return;send.disabled=true;textarea.hidden=true;status.hidden=false;form.classList.add('is-working');row.setAttribute('aria-busy','true');session.timer=setTimeout(()=>{applyAiField(name,aiFieldPresets[name],target);closeAiEditor();trigger.focus({preventScroll:true})},3000)};textarea.focus({preventScroll:true});};
+}
+const originalOpenFullEditor=openFullEditor;openFullEditor=function(){closeAiEditor();originalOpenFullEditor()};completedControls.children[1].onclick=openFullEditor;
+
+// Updated upload entry, Web URL source and compact upload example.
+const uploadIcon=document.querySelector('#upload>img');
+uploadIcon.src='asset-upload-plus.svg';
+document.querySelector('#upload>span').innerHTML='Images, video,<br>documents';
+document.querySelector('#upload').setAttribute('aria-label','Upload images, video or documents');
+
+const exampleBody=example.querySelector('.example-body');
+example.querySelector('.example-arrow').src='asset-example-popover-arrow-new.svg';
+exampleBody.className='example-body';
+exampleBody.innerHTML='<p class="example-intro">Upload product images or files, and add a prompt with any extra details. More context helps AI create a better listing. Here are example :</p><div class="example-cards"><article class="example-card"><div class="example-card-heading"><h3>Fashion apparel</h3><span>3 materials · 1 description</span></div><div class="example-images"><figure><span class="example-thumb"><img src="asset-example-fashion-samples.png" alt="Main product image"></span><figcaption>Main image</figcaption></figure><figure><span class="example-thumb"><img src="asset-example-fashion-samples.png" alt="Product detail image"></span><figcaption>Detail image</figcaption></figure><figure><span class="example-thumb"><img src="asset-example-fashion-samples.png" alt="Product size chart"></span><figcaption>Size chart</figcaption></figure><figure><span class="example-thumb"><img src="asset-example-fashion-samples.png" alt="Product tag"></span><figcaption>Product tag</figcaption></figure></div><p class="example-description">Relaxed-fit cotton polo. Highlight breathable fabric, fit and size range.</p></article></div>';
+
+const sourceControl=document.createElement('div');
+sourceControl.className='source-control';
+sourceControl.innerHTML='<button type="button" id="web-url-button" aria-expanded="false" aria-controls="url-popover"><img src="asset-web-url-link.svg" alt="">Web URL</button><div id="web-url-chip" hidden><span>https://www.figma.com/design...</span><button type="button" id="remove-web-url" aria-label="Remove web URL"><img src="asset-web-url-close.svg" alt=""></button></div><div id="url-popover" hidden><div class="url-popover-body"><h3>Upload URL</h3><textarea id="url-input" maxlength="500" placeholder="Paste the link, and we will parse the product information from the link." aria-label="Web URL"></textarea><span id="url-count">0/500</span><button type="button" id="confirm-url" disabled>Confirm</button></div><img src="asset-web-url-arrow.svg" alt=""></div>';
+document.querySelector('.actions').prepend(sourceControl);
+const webUrlButton=sourceControl.querySelector('#web-url-button');
+const webUrlChip=sourceControl.querySelector('#web-url-chip');
+const urlPopover=sourceControl.querySelector('#url-popover');
+const urlInput=sourceControl.querySelector('#url-input');
+const urlCount=sourceControl.querySelector('#url-count');
+const confirmUrl=sourceControl.querySelector('#confirm-url');
+let webUrlAttached=false;
+const baseUpdate=update;
+update=function(){
+ baseUpdate();
+ create.disabled=recognitionFailed||analyzing||(!prompt.value.trim()&&!files.length&&!webUrlAttached);
+};
+function closeUrlPopover(){
+ urlPopover.hidden=true;
+ webUrlButton.setAttribute('aria-expanded','false');
+}
+webUrlButton.onclick=()=>{
+ const opening=urlPopover.hidden;
+ closeUrlPopover();
+ if(opening){
+  urlInput.value='';
+  urlCount.textContent='0/500';
+  confirmUrl.disabled=true;
+  urlPopover.hidden=false;
+  webUrlButton.setAttribute('aria-expanded','true');
+  urlInput.focus({preventScroll:true});
+ }
+};
+urlInput.oninput=()=>{
+ urlCount.textContent=urlInput.value.length+'/500';
+ confirmUrl.disabled=!urlInput.value.trim();
+};
+confirmUrl.onclick=()=>{
+ if(!urlInput.value.trim())return;
+ clearRecognitionError();webUrlAttached=true;
+ closeUrlPopover();
+ webUrlButton.hidden=false;
+ webUrlChip.hidden=false;
+ update();
+};
+sourceControl.querySelector('#remove-web-url').onclick=()=>{
+ webUrlAttached=false;
+ webUrlChip.hidden=true;
+ webUrlButton.hidden=false;
+ update();
+ webUrlButton.focus({preventScroll:true});
+};
+document.addEventListener('click',event=>{
+ if(!urlPopover.hidden&&!sourceControl.contains(event.target)&&!urlPopover.contains(event.target)&&!event.target.closest('#inline-url-button'))closeUrlPopover();
+});
+document.addEventListener('keydown',event=>{
+ if(event.key==='Escape'&&!urlPopover.hidden){
+  closeUrlPopover();
+  webUrlButton.focus({preventScroll:true});
+ }
+});
+update();
+
+const reviewSuggestions=[
+ ['Price','Based on pricing found in your uploaded materials. Promotions or recent price changes may not be reflected, so please confirm the final selling price.'],
+ ['Stock','Based on the quantity found in your uploaded materials. Current availability may have changed since those materials were created, so please confirm the stock available for sale.']
+];
+const confidence=document.createElement('section');confidence.id='confidence';confidence.hidden=true;
+confidence.innerHTML='<button type="button" id="confidence-summary" aria-expanded="false" aria-controls="confidence-panel"><img src="asset-confidence-icon.svg" alt=""><span>Suggested details to review : Price, Stock</span><img class="confidence-chevron" src="asset-confidence-chevron.svg" alt=""></button><section id="confidence-panel" hidden aria-label="Suggested details to review"><button type="button" id="confidence-heading" aria-expanded="true" aria-controls="confidence-list"><span><img src="asset-confidence-icon.svg" alt="">Suggested details to review : Price, Stock</span><img class="confidence-chevron" src="asset-confidence-chevron.svg" alt=""></button><div id="confidence-list" tabindex="0" role="region" aria-label="Suggested details to review"></div></section>';
+document.querySelector('.generation-status').append(confidence);
+const confidenceSummary=document.querySelector('#confidence-summary'),confidencePanel=document.querySelector('#confidence-panel'),confidenceList=document.querySelector('#confidence-list');
+for(const [name,reason] of reviewSuggestions){const item=document.createElement('article');item.className='confidence-item';const bullet=document.createElement('img');bullet.src='asset-confidence-bullet.svg';bullet.alt='';const body=document.createElement('div'),line=document.createElement('div');line.className='confidence-item-heading';const title=document.createElement('b');title.textContent=name;line.append(title);const text=document.createElement('p');text.textContent=reason;body.append(line,text);item.append(bullet,body);confidenceList.append(item)}
+let confidenceMotion;
+function setConfidenceExpanded(expanded){
+ const changed=confidenceSummary.hidden!==expanded;
+ const startHeight=confidence.getBoundingClientRect().height;
+ confidenceMotion?.cancel();
+ confidenceSummary.hidden=expanded;confidencePanel.hidden=!expanded;
+ confidenceSummary.setAttribute('aria-expanded',String(expanded));
+ if(expanded)confidenceList.scrollTop=0;
+ if(!changed||confidence.hidden||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const target=expanded?confidencePanel:confidenceSummary;
+ const endHeight=target.getBoundingClientRect().height;
+ confidenceMotion=confidence.animate([{height:startHeight+'px'},{height:endHeight+'px'}],{duration:380,easing:'cubic-bezier(.22,1,.36,1)'});
+ target.animate([{opacity:.25,transform:'translateY('+ (expanded?-4:4) +'px)'},{opacity:1,transform:'translateY(0)'}],{duration:300,easing:'cubic-bezier(.22,1,.36,1)'});
+ if(expanded)document.querySelector('#confidence-heading').focus({preventScroll:true});
+}
+confidenceSummary.onclick=()=>setConfidenceExpanded(true);document.querySelector('#confidence-heading').onclick=()=>{setConfidenceExpanded(false);confidenceSummary.focus({preventScroll:true})};
+const originalFinishListing=finishListing;finishListing=function(){originalFinishListing();confidence.hidden=false;setConfidenceExpanded(false);thinkingToggle.disabled=false;thinkingToggle.setAttribute('aria-expanded','false');pausedEditReview.hidden=true;};
+const originalResetCompleted=resetCompleted;resetCompleted=function(){originalResetCompleted();confidence.hidden=true;setConfidenceExpanded(false);thinkingToggle.disabled=false;};
+
+const marketingSection=document.querySelector('.completed-marketing');
+marketingSection.querySelector('h3').textContent='Marketing';
+const marketingCards=[...marketingSection.querySelectorAll('.marketing-cards article')];
+for(const card of marketingCards)card.querySelector(':scope > button').classList.add('marketing-join');
+const boostCard=marketingCards[0],boostMain=boostCard.querySelector(':scope > div'),boostTitle=boostMain.querySelector('h4');
+boostCard.classList.add('boost-card');boostMain.classList.add('marketing-main');
+const boostToggle=document.createElement('button');boostToggle.type='button';boostToggle.className='boost-toggle';boostToggle.setAttribute('aria-expanded','false');boostToggle.setAttribute('aria-controls','boost-details');boostToggle.innerHTML='<img src="asset-loading-chevron.svg" alt=""><span>'+boostTitle.textContent+'</span>';
+boostTitle.replaceWith(boostToggle);
+const boostDetails=document.createElement('div');boostDetails.id='boost-details';boostDetails.className='boost-details';boostDetails.setAttribute('aria-hidden','true');
+for(const [label,value,action,editable] of [['My Balance','$100','Top up',false],['Estimated ROI','4.0-4.5','',true],['Daily Budget','Unlimited','',true],['Duration','No end date','',true]]){const row=document.createElement('div');row.className='boost-detail-row';const name=document.createElement('span');name.textContent=label;const detail=document.createElement('span');detail.className='boost-detail-value';detail.append(document.createTextNode(value));if(action){const link=document.createElement('button');link.type='button';link.textContent=action;detail.append(link)}if(editable){const pencil=document.createElement('img');pencil.src='asset-edit-pencil.svg';pencil.alt='';detail.append(pencil)}row.append(name,detail);boostDetails.append(row)}
+boostCard.append(boostDetails);
+boostToggle.onclick=()=>{const expanded=boostToggle.getAttribute('aria-expanded')==='true';boostToggle.setAttribute('aria-expanded',String(!expanded));boostDetails.setAttribute('aria-hidden',String(expanded));boostCard.classList.toggle('expanded',!expanded);boostCard.parentElement.classList.toggle('boost-expanded',!expanded);};
+
+
+// Stream visible thinking text at 22.5 Unicode characters per second.
+const thinkingTyping=new Map();let thinkingAnimation=0,thinkingLastTime=0;
+function clearThinkingTyping(){for(const [node,job] of thinkingTyping)node.textContent=job.text;thinkingTyping.clear();cancelAnimationFrame(thinkingAnimation);thinkingAnimation=0;thinkingLastTime=0;}
+function typeThinking(node,text,speed=22.5){
+ node.dataset.fullText=text;thinkingTyping.delete(node);
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches){node.textContent=text;return;}
+ node.textContent='';thinkingTyping.set(node,{text,letters:Array.from(text),elapsed:0,count:0,speed});
+ if(!thinkingAnimation){thinkingLastTime=performance.now();thinkingAnimation=requestAnimationFrame(tickThinking);}
+}
+function tickThinking(now){
+ const delta=now-thinkingLastTime;thinkingLastTime=now;
+ const followBottom=thinkingScroll.scrollHeight-thinkingScroll.scrollTop-thinkingScroll.clientHeight<30;
+ for(const [node,job] of thinkingTyping){
+  if(!node.isConnected){thinkingTyping.delete(node);continue;}
+  if(generationPaused)continue;
+  job.elapsed+=delta;const count=Math.min(job.letters.length,Math.floor(job.elapsed*job.speed/1000));
+  if(count!==job.count){node.textContent=job.letters.slice(0,count).join('');job.count=count;}
+  if(count===job.letters.length)thinkingTyping.delete(node);
+ }
+ if(followBottom&&generation.classList.contains('is-review'))thinkingScroll.scrollTop=thinkingScroll.scrollHeight;
+ thinkingAnimation=thinkingTyping.size?requestAnimationFrame(tickThinking):0;
+}
+
+document.documentElement.classList.remove("app-initializing");
+
+// Play the welcome sequence once per page load, without delaying input.
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+ const welcomeTargets=['.ai-title','.hero h2','.hero p','.composer','.recommendation-heading','.products .product'];
+ let welcomeIndex=0;
+ for(const selector of welcomeTargets){
+  for(const element of document.querySelectorAll(selector)){
+   element.animate([{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:560,delay:welcomeIndex++*65,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
+  }
+ }
+}
+
+// Completed listing groups: Basic Information (including description), then Marketing.
+const basicHeading=document.createElement('h3');
+basicHeading.id='basic-information-heading';basicHeading.textContent='Basic Information';
+document.querySelector('#review-gallery').before(basicHeading);
+const descriptionSection=document.querySelector('.completed-other');
+descriptionSection.querySelector('h3').remove();
+descriptionSection.className='completed-description-section';
+completedInfo.insertBefore(descriptionSection,document.querySelector('.completed-marketing'));
+
+// Figma 2478:82476: expanded material upload and inline URL hint.
+const uploadExamples=document.createElement('span');uploadExamples.className='upload-examples';
+uploadExamples.innerHTML='<span class="upload-example-label">Example</span><span class="upload-example-grid">'+['Main image','Detail image','Size chart','Product tag'].map((label,i)=>'<span class="upload-example-item"><span class="upload-example-thumb"><img src="asset-home-samples.png" alt="'+label+' example" style="left:-'+i*100+'%"></span><span>'+label+'</span></span>').join('')+'</span>';
+document.querySelector('#upload').append(uploadExamples);
+uploadIcon.src='asset-home-upload.svg';
+const uploadLabel=document.querySelector('#upload>span');
+function syncUploadLayout(){const attached=files.length>0;composer.classList.toggle('has-materials',attached);uploadLabel.innerHTML=attached?'Images, video,<br>documents':'Upload/drop Images, video, documents';}
+const homeUpdate=update;update=function(){homeUpdate();syncUploadLayout()};
+syncUploadLayout();
+webUrlButton.lastChild.textContent='Shopee Standrad Product';
+document.querySelector('.search').hidden=true;
+const homePlaceholder=document.querySelector('#placeholder');
+trigger.hidden=true;
+homePlaceholder.replaceChildren(document.createTextNode('Input more details like size, price  and your idea, Or you can copy a '));
+const inlineUrl=document.createElement('button');inlineUrl.type='button';inlineUrl.id='inline-url-button';inlineUrl.setAttribute('aria-label','Upload product URL');inlineUrl.innerHTML='<img src="asset-home-link.svg" alt="">';inlineUrl.onclick=()=>webUrlButton.click();
+homePlaceholder.append(inlineUrl,document.createTextNode(' URL into the input field.'),trigger);
+
+// A scalable dashed outline preserves the reference's orange-to-gold stroke.
+const uploadOutline=document.createElementNS('http://www.w3.org/2000/svg','svg');
+uploadOutline.classList.add('upload-outline');uploadOutline.setAttribute('aria-hidden','true');
+uploadOutline.innerHTML='<defs><linearGradient id="upload-stroke-gradient" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ee4d2d"/><stop offset="1" stop-color="#eeac2d"/></linearGradient></defs><rect x="0.5" y="0.5" rx="12" fill="none" stroke="url(#upload-stroke-gradient)" stroke-width="1" stroke-dasharray="5 4"/>';
+const uploadButton=document.querySelector('#upload');uploadButton.append(uploadOutline);
+new ResizeObserver(()=>{const width=uploadButton.clientWidth,height=uploadButton.clientHeight;uploadOutline.setAttribute('viewBox',`0 0 ${width} ${height}`);const rect=uploadOutline.querySelector('rect');rect.setAttribute('width',Math.max(0,width-1));rect.setAttribute('height',Math.max(0,height-1));}).observe(uploadButton);
+
+// Inline URL source: keep the uploaded source alongside the seller's prompt.
+const promptArea=document.querySelector('.prompt-area');
+promptArea.append(webUrlChip,urlPopover);
+const sourceIcon=document.createElement('img');sourceIcon.src='asset-web-url-link.svg';sourceIcon.alt='';webUrlChip.prepend(sourceIcon);
+confirmUrl.textContent='Upload';
+inlineUrl.setAttribute('aria-expanded','false');
+inlineUrl.setAttribute('aria-controls','url-popover');
+const copyHint=document.createElement('span');copyHint.className='copy-url-hint';copyHint.textContent='Copy URL';copyHint.id='copy-url-hint';copyHint.setAttribute('role','tooltip');inlineUrl.append(copyHint);inlineUrl.setAttribute('aria-describedby',copyHint.id);
+const originalCloseUrl=closeUrlPopover;
+closeUrlPopover=function(){originalCloseUrl();inlineUrl.setAttribute('aria-expanded','false')};
+function positionUrlPopover(anchor){
+ const area=promptArea.getBoundingClientRect(),rect=anchor.getBoundingClientRect();
+ urlPopover.style.left=Math.max(0,Math.min(rect.left-area.left-32,area.width-280))+'px';
+ urlPopover.style.top=(rect.bottom-area.top+5)+'px';
+}
+const openSourceUrl=webUrlButton.onclick;
+webUrlButton.onclick=()=>{openSourceUrl();if(!urlPopover.hidden)positionUrlPopover(webUrlButton)};
+inlineUrl.onclick=event=>{event.stopPropagation();openSourceUrl();inlineUrl.setAttribute('aria-expanded',String(!urlPopover.hidden));if(!urlPopover.hidden)positionUrlPopover(inlineUrl)};
+const emptyPromptNodes=[...homePlaceholder.childNodes];
+function syncUrlPrompt(){
+ promptArea.classList.toggle('has-url',webUrlAttached);
+ homePlaceholder.replaceChildren(...emptyPromptNodes);
+}
+confirmUrl.onclick=()=>{
+ if(!urlInput.value.trim())return;
+ clearRecognitionError();webUrlAttached=true;
+ webUrlChip.querySelector('span').textContent='https://www.figma.c...';
+ webUrlChip.title=urlInput.value.trim();
+ webUrlChip.hidden=false;closeUrlPopover();syncUrlPrompt();update();
+};
+document.querySelector('#remove-web-url').onclick=()=>{webUrlAttached=false;webUrlChip.hidden=true;syncUrlPrompt();update();prompt.focus({preventScroll:true})};
+
+// SSP is a selectable source mode, independent of the inline URL uploader.
+let sspActive=false;
+const sspClose=document.createElement('img');sspClose.src='asset-ssp-close.svg';sspClose.alt='';sspClose.className='ssp-close';sspClose.hidden=true;webUrlButton.append(sspClose);
+webUrlButton.removeAttribute('aria-controls');webUrlButton.removeAttribute('aria-expanded');webUrlButton.setAttribute('aria-pressed','false');
+const syncNormalUrlPrompt=syncUrlPrompt;
+syncUrlPrompt=function(){
+ syncNormalUrlPrompt();
+ if(sspActive)homePlaceholder.replaceChildren(document.createTextNode('Input standrad product information. e.g. iphone 17, SSP1111, We will search our inventory for matching items.'));
+};
+webUrlButton.onclick=()=>{
+ closeUrlPopover();sspActive=!sspActive;
+ webUrlButton.setAttribute('aria-pressed',String(sspActive));
+ webUrlButton.querySelector('img').src=sspActive?'asset-ssp-active-link.svg':'asset-web-url-link.svg';
+ sspClose.hidden=!sspActive;syncUrlPrompt();
+};
+
+// Generation controls live beside the progress they control.
+const generationControls=document.querySelector('.generation-controls');
+const generationStatus=document.querySelector('.generation-status');
+generationStatus.append(generationControls);
+pauseGeneration.replaceChildren(document.createTextNode('Stop'));
+pauseGeneration.setAttribute('aria-label','Stop generation');pauseGeneration.title='Stop generation';
+const backUpload=document.querySelector('#back-upload');
+const continueGeneration=document.querySelector('#continue-generation');
+const sourceEditor=document.createElement('section');sourceEditor.id='generation-source-editor';sourceEditor.hidden=true;
+sourceEditor.innerHTML='<div class="source-edit-media"></div><textarea id="source-edit-prompt" aria-label="Edit uploaded product information"></textarea><div class="source-edit-actions"><button type="button" id="source-back">Back to Upload</button><button type="button" id="source-continue">Continue</button></div>';
+generationStatus.after(sourceEditor);
+const sourcePrompt=sourceEditor.querySelector('textarea');
+let sourceDraft=[];
+const sourcePicker=document.createElement('input');sourcePicker.type='file';sourcePicker.multiple=true;sourcePicker.accept='image/*,video/*,.pdf,.doc,.docx,.txt';sourcePicker.hidden=true;sourceEditor.append(sourcePicker);
+function renderSourceDraft(){
+ const row=sourceEditor.querySelector('.source-edit-media');row.replaceChildren();
+ const upload=document.createElement('button');upload.type='button';upload.className='source-edit-upload';upload.innerHTML='<img src="asset-upload-plus.svg" alt=""><span>Images, video,<br>documents</span>';upload.setAttribute('aria-label','Upload images, video or documents');upload.onclick=()=>{sourcePicker.value='';sourcePicker.click()};row.append(upload);
+ sourceDraft.forEach((item,index)=>{
+  const tile=document.createElement('div');tile.className='source-edit-tile';
+  if(item.file.type.startsWith('image/')){const img=document.createElement('img');img.src=item.url;img.alt=item.file.name;tile.append(img)}
+  else{const label=document.createElement('span');label.textContent=item.file.name;tile.append(label)}
+  const remove=document.createElement('button');remove.type='button';remove.className='remove';remove.setAttribute('aria-label','Remove '+item.file.name);remove.innerHTML='<img src="asset-remove-file.svg" alt="">';remove.onclick=()=>{sourceDraft.splice(index,1);renderSourceDraft()};tile.append(remove);row.append(tile);
+ });
+}
+sourcePicker.onchange=()=>{for(const file of sourcePicker.files)sourceDraft.push({file,url:URL.createObjectURL(file)});renderSourceDraft()};
+function closeSourceEditor(){sourceEditor.hidden=true;generation.classList.remove('editing-source');}
+function openSourceEditor(){
+ sourceDraft=files.map(item=>({...item}));sourcePrompt.value=prompt.value;
+ renderSourceDraft();sourceEditor.hidden=false;generation.classList.add('editing-source');sourcePrompt.focus({preventScroll:true});
+}
+function commitSourceEditor(){files=sourceDraft.map(item=>({...item}));prompt.value=sourcePrompt.value;renderFiles();closeSourceEditor()}
+const previousPause=pauseGeneration.onclick;
+pauseGeneration.onclick=()=>{previousPause();pausedEditReview.hidden=false;pausedEditReview.textContent='Edit Upload Information';backUpload.hidden=true;document.querySelector('#thinking-toggle>span').textContent=remainingMode?'Generate all remaining product details':'Generate your product details';};
+pausedEditReview.onclick=openSourceEditor;
+sourceEditor.querySelector('#source-back').onclick=()=>{commitSourceEditor();backUpload.onclick()};
+sourceEditor.querySelector('#source-continue').onclick=()=>{commitSourceEditor();startGeneration()};
+const previousStartGeneration=startGeneration;
+startGeneration=function(){closeSourceEditor();previousStartGeneration();generationAnnouncement.textContent="Generating product details"};
+
+// Result structure: section-level Edit / Preview, with publishing actions below.
+const basicHeader=document.createElement('div');basicHeader.id='basic-information-header';
+basicHeading.before(basicHeader);basicHeader.append(basicHeading);
+const resultEditToggle=completedControls.children[1];resultEditToggle.id='result-edit-toggle';basicHeader.append(resultEditToggle);
+function syncResultEditToggle(){
+ const editing=generation.classList.contains('full-edit');
+ resultEditToggle.replaceChildren(document.createTextNode(editing?'Preview':'Edit'));
+ if(!editing){const icon=document.createElement('img');icon.src='asset-result-edit.svg';icon.alt='';resultEditToggle.append(icon)}
+ resultEditToggle.setAttribute('aria-pressed',String(editing));
+}
+const resultOpenEditor=openFullEditor;
+openFullEditor=function(){resultOpenEditor();syncResultEditToggle()};
+const resultCloseEditor=closeFullEditor;
+closeFullEditor=function(){resultCloseEditor();syncResultEditToggle()};
+resultEditToggle.onclick=()=>{if(generation.classList.contains('full-edit'))saveFullEditor();else openFullEditor()};
+syncResultEditToggle();
+completedControls.children[0].textContent='Save and Delist';
+fullEditControls.children[0].textContent='Save and Delist';fullEditControls.children[1].textContent='Publish Product';
+reviewCategoryInput.value='Shoes > Athletic Shoes > Running Shoes';syncReview();
+</script></body></html>
